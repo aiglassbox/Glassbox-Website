@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { projects, type Project } from "@/data/projects";
-import { Marquee } from "../ui/Marquee";
 import { LogoMark } from "../ui/Logo";
 import { Reveal } from "../ui/Reveal";
 
@@ -84,19 +83,23 @@ export function Projects({ limit = 5 }: { limit?: number }) {
 
   return (
     <section id="works" className="relative bg-[#08080a] pt-20">
-      {/* Brand logo marquee */}
-      <div className="border-y border-white/[0.06] py-7">
-        <Marquee speed={40} gap="gap-14">
-          {[...projects, ...projects].map((p, i) => (
+      {/* Brand logo marquee — seamless scroll */}
+      <div className="overflow-hidden border-y border-white/[0.06] py-7">
+        <motion.div
+          className="flex w-max"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ duration: 32, ease: "linear", repeat: Infinity }}
+        >
+          {[...projects, ...projects, ...projects, ...projects].map((p, i) => (
             <span
               key={`${p.slug}-${i}`}
-              className="flex items-center gap-2.5 text-[26px] font-medium tracking-tight text-white/20"
+              className="mr-14 flex items-center gap-2.5 whitespace-nowrap text-[26px] font-medium tracking-tight text-white/20"
             >
               <LogoMark className="h-6 w-6" />
               {p.name}
             </span>
           ))}
-        </Marquee>
+        </motion.div>
       </div>
 
       {/* Header */}
