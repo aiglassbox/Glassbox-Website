@@ -41,7 +41,7 @@ function Card({
 
 export function Testimonials() {
   return (
-    <section className="section-pad">
+    <section className="pb-10 pt-20 sm:pb-12 sm:pt-28">
       <div className="container-x grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
         {/* Left — sticky heading */}
         <div className="lg:sticky lg:top-28">
