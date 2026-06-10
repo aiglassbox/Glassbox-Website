@@ -19,6 +19,13 @@ const socialLinks = [
 export function Footer() {
   return (
     <footer className="relative z-[2] overflow-hidden bg-[#08080a] px-5 pb-8 pt-20 sm:px-8 sm:pt-24">
+      {/* Giant wordmark */}
+      <div className="mb-16 select-none sm:mb-20">
+        <h2 className="wordmark text-center text-[16.5vw] font-bold leading-[0.8] tracking-[0.04em] text-white/40">
+          GLASSBOX
+        </h2>
+      </div>
+
       {/* Columns */}
       <div className="grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-4">
         <div className="flex flex-col gap-4">
@@ -65,13 +72,6 @@ export function Footer() {
             Occasional updates from the studio. No spam.
           </p>
         </div>
-      </div>
-
-      {/* Giant wordmark */}
-      <div className="mt-16 select-none sm:mt-20">
-        <h2 className="wordmark text-center text-[16.5vw] font-bold leading-[0.8] tracking-[0.04em] text-white">
-          GLASSBOX
-        </h2>
       </div>
 
       {/* Bottom bar */}

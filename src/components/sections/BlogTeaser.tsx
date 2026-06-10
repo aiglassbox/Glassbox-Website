@@ -5,7 +5,7 @@ import { BlogCard } from "../ui/BlogCard";
 export function BlogTeaser() {
   const list = posts.slice(0, 2);
   return (
-    <section className="section-pad">
+    <section className="pb-20 pt-10 sm:pb-28 sm:pt-12">
       <div className="container-x">
         <SectionHeader
           title="Blog."

@@ -59,7 +59,7 @@ export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="section-pad">
+    <section className="py-10 sm:py-12">
       <div className="container-x grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <Reveal>
           <h2 className="display text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
