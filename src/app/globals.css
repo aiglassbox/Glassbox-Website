@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #08080a;
+  --container: 1280px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: #fff;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #0099ff;
+  color: #fff;
+}
+
+/* Thin scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2d;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3e;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1280px] px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Subtle grain / noise overlay */
+  .noise::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .pill {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-[13px] font-medium transition-colors duration-300;
+  }
+  .pill-light {
+    @apply bg-white text-black hover:bg-white/85;
+  }
+  .pill-ghost {
+    @apply border border-white/15 text-white hover:bg-white/5;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[12px] uppercase tracking-[0.18em] text-muted;
+  }
+
+  .section-pad {
+    @apply py-20 sm:py-28 lg:py-32;
+  }
+
+  .hover-img-zoom img {
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .hover-img-zoom:hover img {
+    transform: scale(1.05);
+  }
+}
+
+/* Big display headings — heavy grotesk, tight tracking */
+.display {
+  font-family: var(--font-archivo), var(--font-inter), sans-serif;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+/* The GLASSBOX wordmark — Utara */
+.wordmark {
+  font-family: var(--font-utara), var(--font-archivo), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.78;
+}
+
+/* Reversed N (И) — the Lanes signature glyph */
+.flip-x {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Multicolor radial glow used behind the footer / menu */
+.aurora {
+  background:
+    radial-gradient(40% 45% at 50% 38%, rgba(214, 60, 180, 0.55), transparent 70%),
+    radial-gradient(38% 42% at 32% 30%, rgba(60, 70, 220, 0.5), transparent 72%),
+    radial-gradient(45% 50% at 55% 75%, rgba(40, 180, 110, 0.45), transparent 72%);
+  filter: blur(60px);
+}
