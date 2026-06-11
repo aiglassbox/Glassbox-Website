@@ -6,8 +6,10 @@ export type Project = {
   card: string;
   cover: string;
   gallery: string[];
+  tagline: string;
   intro: string;
   body: string;
+  results: string;
   year: string;
   scope: string;
   timeline: string;
@@ -17,100 +19,101 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "lunar",
-    name: "Lunar+",
+    slug: "insurance",
+    name: "Insurance Player",
     card: A("73igyKZXdSW8DTMpUdfroZgsw.jpg"),
     cover: A("4DYyWWmV14qFdgXQ9ckzO76htw4.png"),
     gallery: [A("1CmAReQl2fVgqq5LiHBxZ4XvNAc.png"), A("X8a7igKqE2919YI7cEjAGm4VSF4.png")],
+    tagline: "De-Aged. Re-Energised. Future-Ready.",
     intro:
-      "Lunar is a vintage marketplace with a passion for unique, character-rich pieces. As their audience evolved, they needed a brand and digital presence that felt fresh, expressive, and culturally relevant. We partnered with Flea to reimagine their identity and craft a bold, story-driven website experience.",
+      "Transforming a legacy insurer into a brand built for the modern Indian consumer — without losing the credibility it spent decades earning.",
     body:
-      "We crafted a fresh, expressive brand identity for Flea, blending retro-inspired elements with bold modern visuals. A new website experience brought their story to life through playful layouts, dynamic typography, and interactive moments.",
-    year: "10.25",
-    scope: "Branding, UI",
-    timeline: "4 weeks",
+      "Ageas carried the authority of an established insurance player, but its identity no longer reflected the expectations of a modern, digitally native audience. The challenge was not simply to refresh the brand, but to de-age and re-energise it without losing credibility. We developed a contemporary visual, sonic and motion system that infused agility and warmth into the brand — creating a cohesive experience across physical, digital and communication touchpoints, and positioning Ageas as an insurer built for today's consumer.",
+    results:
+      "The transformation came to life most visibly in the 'Har Wada Mumkin' campaign with Sachin Tendulkar — a platform that gave the refreshed brand its clearest expression yet. 30M+ TVC views, 163M+ pan-India viewers, and a digital phase that generated 36M+ impressions: proof that a brand built for today's consumer doesn't just look different — it performs differently too.",
+    year: "2025",
+    scope: "Brand, Motion & Sonic",
+    timeline: "16 weeks",
     status: "Live project",
-    preview: "https://clonify.io/",
+    preview: "#",
   },
   {
-    slug: "clonify",
-    name: "Clonify",
+    slug: "uk-coffee",
+    name: "UK Coffee",
     card: A("8AFDwJazXH9ditYWThksaaP9jYM.jpg"),
     cover: A("BWqMhPBZdO9i3A0Si3UR7ccAIc.png"),
     gallery: [A("LhSWoZOPr8IF6GBO0rpHmLU5Js.png"), A("jvUVqnzFKcbAPtjyunsAtNUkG8.png")],
+    tagline:
+      "Sharpened a beloved coffee brand to punch harder, speak louder, and move smarter in the competitive UK coffee aisle.",
     intro:
-      "Clonify is a boutique creative agency focused on playful branding and personality-driven campaigns, known for its cheeky tone and bold visuals. As they grew, they needed an identity and site that matched their fearless, witty energy.",
+      "Redefining growth strategy for a niche UK flavoured coffee brand with 50+ varieties and a plateau problem.",
     body:
-      "We rebuilt Clonify’s brand identity using bright colors, lively typography, and witty microcopy. Interactive website elements and expressive layouts were introduced to match the agency’s voice and turn every visit into a memorable experience.",
-    year: "01.25",
-    scope: "Branding",
-    timeline: "8 weeks",
-    status: "Live project",
-    preview: "https://clonify.io/",
-  },
-  {
-    slug: "grotesks",
-    name: "Grotesks",
-    card: A("eII1CsBFMUv0tWAVY9REnIiw.jpg"),
-    cover: A("LVa0XkeTMoQwwLi32BM5vLqrpA.png"),
-    gallery: [A("N6ZG2EJ1IQSRAQh7Lh3brLnZK5A.png"), A("OuMUjvmQDEQwLVcTFk6HgmIAyx0.png")],
-    intro:
-      "Grotesks is a template studio for Framer creators, offering clean, modern website templates built for speed and style. As their collection grew, they needed a brand and site refresh that showcased their products clearly while reflecting the creativity of their growing community.",
-    body:
-      "We redesigned Clonify’s brand and site with a crisp, minimal aesthetic and a focus on usability. Clean layouts, playful moments, and a streamlined browsing experience made it easier for users to discover, preview, and purchase templates — while reinforcing Clonify’s fresh, creator-first identity.",
-    year: "08.25",
-    scope: "Branding",
+      "In a cluttered UK coffee market, Beanies — known for its 50+ flavoured varieties — had hit a plateau. Its vibrant product world wasn't translating into consumer excitement, and its positioning lacked the sharpness needed to drive trial or loyalty. We redefined Beanies' growth story by building a refreshed, dual-messaging strategy rooted in research-led TOFU and BOFU D2C frameworks. Layered with an AI-powered creative engine, we delivered motion-first, performance-led assets designed to scale across markets — infusing the brand with distinctive tonality, agile operations, and global adaptability.",
+    results:
+      "The results followed the strategy. Six new listings across major UK grocery and specialty retail chains. Top 5 on Amazon's flavoured coffee category. A 3× improvement in ROAS. Beanies went from a niche favourite coasting on loyalty to a category challenger actively growing its audience — and its shelf presence.",
+    year: "2024",
+    scope: "Growth Strategy, D2C",
     timeline: "12 weeks",
     status: "Live project",
-    preview: "https://clonify.io/",
+    preview: "#",
   },
   {
-    slug: "zypher",
-    name: "Zypher",
+    slug: "ev-player",
+    name: "EV Player",
     card: A("gcCOK3eBfHG7P5Zcxtv9TwUq5A.jpg"),
     cover: A("Ol1Zr9rw6cqy5lAX8anUOvC96uQ.png"),
     gallery: [A("x4MGkvtO5s4trjIGm6gPmiPZbY.png"), A("eqtagxNJ6ssw5Mc5AZ1sCtxLOZM.png")],
+    tagline:
+      "Unlocked $30M in procurement efficiencies while redefining the marketing playbook for a leading EV player.",
     intro:
-      "Zypher is a social-first creative agency built around bold ideas, fast culture, and playful storytelling. They came to us for a brand and web refresh that better reflected their upbeat energy, creative range, and knack for turning everyday moments into viral campaigns.",
+      "Bringing spend intelligence, data strategy and structural rigour to a high-velocity brand scaling fast.",
     body:
-      "We delivered a bold, colorful brand identity paired with a fast, interactive website experience. Featuring dynamic visuals, conversational copy, and movement-packed layouts, Zypher’s new look captures their fearless voice and positions them as the go-to agency for standout social storytelling.",
-    year: "02.25",
-    scope: "Branding, Motion",
-    timeline: "9 weeks",
+      "A leading EV player needed more than a creative partner — they needed a thinking partner embedded inside the system. We audited, restructured and future-proofed their marketing operations from the ground up: procurement efficiencies, content at scale blueprinting, digital-first D2C thinking and end-to-end martech transformation. Every lever was pulled with a single mandate — deliver measurable value at pace.",
+    results:
+      "The outcome wasn't just a leaner operation — it was a future-proofed marketing architecture built to compound value over time. $36M in USD savings over seven months. A 104% increase in digital audiences reached. A 58% uplift in pan-India search clicks. Numbers that speak to what happens when commercial rigour and creative intelligence work from the same playbook.",
+    year: "2025",
+    scope: "Procurement, Martech",
+    timeline: "7 months",
     status: "Live project",
-    preview: "https://clonify.io/",
+    preview: "#",
   },
   {
-    slug: "blob",
-    name: "Blob",
+    slug: "footwear-brand",
+    name: "Footwear Brand",
+    card: A("eII1CsBFMUv0tWAVY9REnIiw.jpg"),
+    cover: A("LVa0XkeTMoQwwLi32BM5vLqrpA.png"),
+    gallery: [A("N6ZG2EJ1IQSRAQh7Lh3brLnZK5A.png"), A("OuMUjvmQDEQwLVcTFk6HgmIAyx0.png")],
+    tagline: "Transformed the media strategy for India's favourite footwear brand.",
+    intro:
+      "Repositioning a comfort-first legacy brand toward a younger, style-driven demographic through new-age channels and content-to-commerce thinking.",
+    body:
+      "Bata, known for its comfort and formal footwear, faced a challenge in shedding its perception as a brand for older consumers. With an average consumer age of 30–35 years, the goal was to lower this to 25–30 years, appealing to a younger, style-driven demographic. The brand needed to elevate its equity around casual and sneaker footwear while leveraging new-age marketing channels to connect with this younger cohort. We built previously unexplored content-to-commerce strategies into the marketing mix.",
+    results:
+      "The media mix was rebuilt from the ground up — integrating influencer ecosystems, social-first content formats, and performance channels that simply hadn't been part of Bata's playbook before. The goal wasn't just to reach a younger audience; it was to earn their attention at the exact moment they were forming their footwear preferences for life. A 30% improvement in CAC was the first signal that the repositioning was landing.",
+    year: "2024",
+    scope: "Media Strategy, Influencer",
+    timeline: "10 weeks",
+    status: "Live project",
+    preview: "#",
+  },
+  {
+    slug: "pan-asian-restaurant",
+    name: "Pan-Asian Restaurant",
     card: A("HSuCYseGw4ZE1rGvst62AgiKg.jpg"),
     cover: A("jvUVqnzFKcbAPtjyunsAtNUkG8.png"),
     gallery: [A("4DYyWWmV14qFdgXQ9ckzO76htw4.png"), A("BWqMhPBZdO9i3A0Si3UR7ccAIc.png")],
-    intro:
-      "Blob is an interactive polling platform designed to spark conversations and gather opinions in real time. As they prepared to expand their audience, they needed a brand and digital experience that felt approachable, fun, and effortlessly easy to use.",
+    tagline:
+      "Consolidating five fragmented agency relationships into one accountable, performance-linked partnership with a unified national narrative.",
+    intro: "Resetting the PR story for India's leading pan-Asian restaurant.",
     body:
-      "We rebranded Blob with bright, friendly visuals and conversational copy, creating a digital space that felt lively and welcoming. The updated website and product UI prioritized simplicity and engagement, turning every poll into a quick, intuitive, and shareable moment for users.",
-    year: "12.25",
-    scope: "Motion, 3D",
-    timeline: "2 weeks",
+      "Foo's PR was scattered across 5 micro-market agencies, speaking fragmented stories, overlapping fees, no single owner. With the restaurant growing at scale across different markets, we are managing an India-fit pitch to appoint one accountable partner for Foo — resetting scopes, rates, and wiring in pay-for-performance. The outcome: a unified national narrative with local agility and a cleaner, leaner PR spend.",
+    results:
+      "The larger ambition goes well beyond cost efficiency. Foo is a brand with genuine cultural cachet, an expanding footprint, and a growth story still being written. The right PR partner — scoped clearly, incentivised correctly, and aligned to business outcomes — won't just amplify that story. They'll help shape it.",
+    year: "2025",
+    scope: "PR Consolidation",
+    timeline: "Ongoing",
     status: "Live project",
-    preview: "https://clonify.io/",
-  },
-  {
-    slug: "things",
-    name: "Things",
-    card: A("j1bAxPZv9KXkSAWes0FMzAgWh50.jpg"),
-    cover: A("OuMUjvmQDEQwLVcTFk6HgmIAyx0.png"),
-    gallery: [A("x4MGkvtO5s4trjIGm6gPmiPZbY.png"), A("LVa0XkeTMoQwwLi32BM5vLqrpA.png")],
-    intro:
-      "Things is a productivity studio crafting calm, focused tools for makers. They wanted an identity and site that felt as considered and tactile as the products themselves — quiet, confident, and deeply usable.",
-    body:
-      "We shaped a refined, minimal brand system and a website experience built around clarity and rhythm. Generous space, precise typography, and subtle motion let the product take center stage while still feeling distinctly human.",
-    year: "06.25",
-    scope: "Branding, UI",
-    timeline: "5 weeks",
-    status: "Live project",
-    preview: "https://clonify.io/",
+    preview: "#",
   },
 ];
 
