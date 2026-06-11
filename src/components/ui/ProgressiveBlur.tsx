@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 /**
- * Framer-style progressive blur strip — stacked backdrop-filter layers, each
+ * Framer-style progressive blur strip, stacked backdrop-filter layers, each
  * with a doubling blur and a band mask, so content blurs more toward the edge.
  * Fixed to the bottom of the viewport, but fades out once the footer scrolls
  * into view so the footer stays perfectly clear.

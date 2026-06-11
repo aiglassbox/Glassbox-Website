@@ -19,7 +19,7 @@ export function generateMetadata({
 }): Metadata {
   const p = getProject(params.slug);
   return {
-    title: p ? `${p.name} — Glassbox` : "Project — Glassbox",
+    title: p ? `${p.name} - Glassbox` : "Project - Glassbox",
     description: p?.intro,
   };
 }

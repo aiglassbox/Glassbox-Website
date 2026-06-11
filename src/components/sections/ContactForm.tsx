@@ -14,7 +14,7 @@ export function ContactForm() {
   return (
     <div className="container-x mt-10">
       <div className="grid items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
-        {/* Left — visual */}
+        {/* Left, visual */}
         <Reveal>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[20px] bg-ink-800 lg:aspect-auto lg:h-full lg:min-h-[620px]">
             <Image
@@ -27,7 +27,7 @@ export function ContactForm() {
           </div>
         </Reveal>
 
-        {/* Right — form */}
+        {/* Right, form */}
         <Reveal delay={0.1}>
           <div className="flex h-full flex-col">
             <div className="mb-6 flex items-center justify-between gap-4">

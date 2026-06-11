@@ -43,7 +43,7 @@ export function Testimonials() {
   return (
     <section className="pb-10 pt-20 sm:pb-12 sm:pt-28">
       <div className="container-x grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
-        {/* Left — sticky heading */}
+        {/* Left, sticky heading */}
         <div className="lg:sticky lg:top-28">
           <Reveal>
             <span className="eyebrow">Testimonials</span>
@@ -53,7 +53,7 @@ export function Testimonials() {
           </Reveal>
         </div>
 
-        {/* Right — scrolling stack of cards */}
+        {/* Right, scrolling stack of cards */}
         <div className="flex flex-col gap-6">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 0.05}>

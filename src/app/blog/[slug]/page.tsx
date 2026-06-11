@@ -17,7 +17,7 @@ export function generateMetadata({
 }): Metadata {
   const p = getPost(params.slug);
   return {
-    title: p ? `${p.title} — Glassbox` : "Article — Glassbox",
+    title: p ? `${p.title} - Glassbox` : "Article - Glassbox",
     description: p?.body[0],
   };
 }

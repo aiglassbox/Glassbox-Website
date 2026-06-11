@@ -60,14 +60,14 @@ export const testimonials = [
   },
   {
     quote:
-      "Working with Glassbox was a game-changer. They didn’t just design our brand — they captured its soul. Everything feels elevated, intentional, and totally us.",
+      "Working with Glassbox was a game-changer. They didn’t just design our brand, they captured its soul. Everything feels elevated, intentional, and totally us.",
     name: "Bruce Lee",
     role: "Design Director, Maiz",
     img: A("UhttJHgYv5v9K5nOB1SgfoSJNaE.jpg"),
   },
   {
     quote:
-      "From concept to launch, the Glassbox team delivered with clarity, creativity, and style. We’ve never looked more professional — or more ourselves.",
+      "From concept to launch, the Glassbox team delivered with clarity, creativity, and style. We’ve never looked more professional, or more ourselves.",
     name: "John Headphone",
     role: "UFO, Marcom",
     img: A("j1bAxPZv9KXkSAWes0FMzAgWh50.jpg"),
@@ -77,23 +77,23 @@ export const testimonials = [
 export const faqs = [
   {
     q: "What’s included in a the monthly package?",
-    a: "Each monthly package includes a set number of design or development hours, dedicated project management, weekly updates, and priority support. We tailor it to fit your needs — whether that’s ongoing branding, web updates, or new creative assets.",
+    a: "Each monthly package includes a set number of design or development hours, dedicated project management, weekly updates, and priority support. We tailor it to fit your needs, whether that’s ongoing branding, web updates, or new creative assets.",
   },
   {
     q: "How long does a project usually take?",
-    a: "Timelines depend on the scope, but most branding projects take 2–3 weeks, and full website builds range from 3–6 weeks. We’ll always give you a clear timeline upfront — and stick to it.",
+    a: "Timelines depend on the scope, but most branding projects take 2–3 weeks, and full website builds range from 3–6 weeks. We’ll always give you a clear timeline upfront, and stick to it.",
   },
   {
     q: "Do you offer ongoing support after launch?",
-    a: "Yes — we offer flexible retainers and care plans after launch, covering everything from small content tweaks and performance monitoring to ongoing design and development support.",
+    a: "Yes, we offer flexible retainers and care plans after launch, covering everything from small content tweaks and performance monitoring to ongoing design and development support.",
   },
   {
     q: "Can I hire you for just a logo or one-off design?",
-    a: "Yes — we take on one-off projects like logos, pitch decks, or landing pages. If it’s a good fit, we’re happy to jump in and help.",
+    a: "Yes, we take on one-off projects like logos, pitch decks, or landing pages. If it’s a good fit, we’re happy to jump in and help.",
   },
   {
     q: "What platforms do you build websites on?",
-    a: "We primarily work with Framer, Webflow, and Shopify — but we’re flexible depending on your project needs and tech stack.",
+    a: "We primarily work with Framer, Webflow, and Shopify, but we’re flexible depending on your project needs and tech stack.",
   },
   {
     q: "How do payments work?",
@@ -101,7 +101,7 @@ export const faqs = [
   },
   {
     q: "What if I’m not happy with the first concept?",
-    a: "No problem — that’s part of the process. We include multiple rounds of revisions to ensure you’re completely happy with the final result. Your feedback helps us shape it just right.",
+    a: "No problem, that’s part of the process. We include multiple rounds of revisions to ensure you’re completely happy with the final result. Your feedback helps us shape it just right.",
   },
 ];
 

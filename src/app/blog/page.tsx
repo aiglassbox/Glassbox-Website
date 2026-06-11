@@ -4,7 +4,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { BlogCard } from "@/components/ui/BlogCard";
 
 export const metadata: Metadata = {
-  title: "Blog — Glassbox",
+  title: "Blog - Glassbox",
   description: "Daily articles, inspiration, and resources by our lovely team.",
 };
 

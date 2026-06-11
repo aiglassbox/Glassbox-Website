@@ -29,7 +29,7 @@ export function Navbar() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-[60] flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5">
-        {/* Frosted glass strip — fades out at the bottom, no border */}
+        {/* Frosted glass strip, fades out at the bottom, no border */}
         {!open && (
           <div
             aria-hidden

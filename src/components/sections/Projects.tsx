@@ -83,7 +83,7 @@ export function Projects({ limit = 5 }: { limit?: number }) {
 
   return (
     <section id="works" className="relative bg-[#08080a] pt-20">
-      {/* Brand logo marquee — seamless scroll */}
+      {/* Brand logo marquee, seamless scroll */}
       <div className="overflow-hidden border-y border-white/[0.06] py-7">
         <motion.div
           className="flex w-max"

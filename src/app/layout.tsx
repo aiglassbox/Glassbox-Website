@@ -26,7 +26,7 @@ const archivo = Archivo({
   display: "swap",
 });
 
-// Utara Bold — the GLASSBOX hero wordmark
+// Utara Bold, the GLASSBOX hero wordmark
 const utara = localFont({
   src: "../fonts/Utara-Bold.ttf",
   variable: "--font-utara",
@@ -35,9 +35,9 @@ const utara = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Glassbox — Creative Agency",
+  title: "Glassbox - Creative Agency",
   description:
-    "Glassbox was designed for forward-thinking studios that value substance as much as style — engineered to command attention, simplify complex ideas, and build lasting authority.",
+    "Glassbox was designed for forward-thinking studios that value substance as much as style, engineered to command attention, simplify complex ideas, and build lasting authority.",
 };
 
 export default function RootLayout({

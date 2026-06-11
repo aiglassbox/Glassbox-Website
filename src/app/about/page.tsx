@@ -7,7 +7,7 @@ import { Counter } from "@/components/sections/Stats";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 
 export const metadata: Metadata = {
-  title: "About — Glassbox",
+  title: "About - Glassbox",
   description:
     "Glassbox is a modern creative studio where design, strategy, and storytelling grow together.",
 };
@@ -23,7 +23,7 @@ export default function AboutPage() {
           <Reveal className="flex flex-col items-center">
             <IntroGlobe />
             <p className="mt-8 max-w-2xl text-balance text-[19px] font-medium leading-relaxed tracking-tight text-white/90 sm:text-[22px]">
-              We&rsquo;re Glassbox &mdash; a creative studio cultivating bold
+              We&rsquo;re Glassbox, a creative studio cultivating bold
               brands, beautiful websites, and ideas that refuse to be ordinary.
             </p>
           </Reveal>

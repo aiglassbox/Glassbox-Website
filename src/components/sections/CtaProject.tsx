@@ -10,7 +10,7 @@ export function CtaProject() {
             Have a project?
           </h2>
           <p className="mx-auto mt-5 max-w-md text-balance text-[16px] text-muted">
-            We’d love to hear from you — whether you have a project in mind, or
+            We’d love to hear from you, whether you have a project in mind, or
             just want to say hi.
           </p>
           <Link href="/contact" className="pill pill-light mt-9 px-7 py-3">

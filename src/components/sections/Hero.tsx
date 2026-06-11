@@ -6,7 +6,7 @@ import { A } from "@/data/site";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-// Two horizontal ticker rows — top scrolls right, bottom scrolls left.
+// Two horizontal ticker rows, top scrolls right, bottom scrolls left.
 // The whole block is gently rotated (-6deg).
 const ROWS = [
   {
@@ -52,7 +52,7 @@ function Tile({ src, priority }: { src: string; priority?: boolean }) {
   );
 }
 
-// Seamless infinite ticker — two identical sequences, translated by exactly
+// Seamless infinite ticker, two identical sequences, translated by exactly
 // one sequence width so the loop never jumps.
 function TickerRow({
   imgs,
@@ -191,7 +191,7 @@ export function Hero() {
           transition={{ duration: 0.9, ease: EASE, delay: 0.7 }}
           className="mt-6 max-w-md text-balance text-[19px] font-medium leading-snug tracking-tight text-white sm:mt-8 sm:text-[22px] lg:text-[26px]"
         >
-          We&rsquo;re Glassbox &mdash; a creative studio based in Gotham.
+          We&rsquo;re Glassbox, a creative studio based in Gotham.
         </motion.p>
       </div>
 
