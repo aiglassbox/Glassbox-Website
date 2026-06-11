@@ -92,14 +92,14 @@ body {
   }
 }
 
-/* Big display headings — heavy grotesk, tight tracking */
+/* Big display headings, heavy grotesk, tight tracking */
 .display {
   font-family: var(--font-archivo), var(--font-inter), sans-serif;
   letter-spacing: -0.04em;
   line-height: 0.95;
 }
 
-/* The GLASSBOX wordmark — Utara */
+/* The GLASSBOX wordmark, Utara */
 .wordmark {
   font-family: var(--font-utara), var(--font-archivo), sans-serif;
   font-weight: 800;
@@ -107,7 +107,7 @@ body {
   line-height: 0.78;
 }
 
-/* Reversed N (И) — the Lanes signature glyph */
+/* Reversed N (И), the Lanes signature glyph */
 .flip-x {
   display: inline-block;
   transform: scaleX(-1);
