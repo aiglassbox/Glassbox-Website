@@ -105,14 +105,12 @@ export const faqs = [
   },
 ];
 
-// Only 3 genuine portrait images exist in /assets; they are arranged so the
-// same photo never sits next to or directly above/below itself in the 2-col grid.
 export const team = [
-  { name: "Bruce Lee", role: "Creative Director", img: A("UhttJHgYv5v9K5nOB1SgfoSJNaE.jpg") },
-  { name: "Sarah Conor", role: "Founder", img: A("yN8oP8ZViEml2iTJPEeku2zEM.jpg") },
-  { name: "Sarah Silverman", role: "Brand Voice Lead", img: A("j1bAxPZv9KXkSAWes0FMzAgWh50.jpg") },
-  { name: "Carl Sagan", role: "Project Manager", img: A("UhttJHgYv5v9K5nOB1SgfoSJNaE.jpg") },
-  { name: "Taro Sakamoto", role: "UFO", img: A("yN8oP8ZViEml2iTJPEeku2zEM.jpg") },
+  { name: "Geetanjali Bhattacharji", role: "Founder and Consulting Director", img: A("team-geetanjali.jpg") },
+  { name: "Anil Nair", role: "Founder and Chief Strategist", img: A("team-anil.jpg") },
+  { name: "Ramesh Krishamurthy", role: "Chief Executive Officer, Komerz", img: A("team-ramesh.jpg") },
+  { name: "Siddharth Shankar", role: "Chief Operating Officer", img: A("team-sid.jpg") },
+  { name: "Michelle Whelan", role: "Global Chief Business Officer", img: A("team-michelle.jpg") },
   { name: "Frodo Baggins", role: "NGO", img: A("j1bAxPZv9KXkSAWes0FMzAgWh50.jpg") },
 ];
 
