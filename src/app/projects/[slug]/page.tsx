@@ -49,13 +49,6 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
     },
   ];
 
-  // Split the body into a lead sentence + the rest for the two-tier block.
-  const sentences = project.body.match(/[^.!?]+[.!?]+/g)?.map((s) => s.trim()) ?? [
-    project.body,
-  ];
-  const lead = sentences[0];
-  const rest = sentences.slice(1).join(" ");
-
   return (
     <>
       {/* Header */}
@@ -102,14 +95,15 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
       {/* Body */}
       <section className="px-5 py-16 sm:px-8 sm:py-20">
         <Reveal className="max-w-2xl">
-          <p className="text-balance text-[21px] leading-relaxed tracking-tight text-white sm:text-[24px]">
-            {lead}
+          <p className="text-balance text-[22px] font-medium leading-snug tracking-tight text-white sm:text-[28px]">
+            {project.tagline}
           </p>
-          {rest && (
-            <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted sm:text-[16px]">
-              {rest}
-            </p>
-          )}
+          <p className="mt-7 text-[15px] leading-relaxed text-muted sm:text-[16px]">
+            {project.body}
+          </p>
+          <p className="mt-4 text-[15px] leading-relaxed text-muted sm:text-[16px]">
+            {project.results}
+          </p>
         </Reveal>
       </section>
 
