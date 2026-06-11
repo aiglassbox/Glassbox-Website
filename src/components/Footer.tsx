@@ -20,8 +20,8 @@ export function Footer() {
   return (
     <footer className="relative z-[2] overflow-hidden bg-[#08080a] px-5 pb-8 pt-20 sm:px-8 sm:pt-24">
       {/* Giant wordmark */}
-      <div className="mb-16 select-none sm:mb-20">
-        <h2 className="wordmark text-center text-[16.5vw] font-bold leading-[0.8] tracking-[0.04em] text-white/40">
+      <div className="mb-14 select-none sm:mb-20">
+        <h2 className="wordmark bg-gradient-to-b from-black to-white bg-clip-text text-center text-[15vw] font-bold leading-[0.82] tracking-[0.02em] text-transparent lg:text-[16vw] lg:tracking-[0.04em]">
           GLASSBOX
         </h2>
       </div>

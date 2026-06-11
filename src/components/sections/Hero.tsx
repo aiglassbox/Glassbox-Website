@@ -120,18 +120,18 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 mix-blend-screen"
         style={{
           background:
-            "radial-gradient(60% 50% at 52% 42%, rgba(232,46,180,0.62), transparent 70%)," +
-            "radial-gradient(50% 45% at 22% 30%, rgba(70,90,235,0.5), transparent 72%)," +
-            "radial-gradient(55% 55% at 60% 82%, rgba(34,200,120,0.55), transparent 72%)," +
-            "radial-gradient(45% 40% at 88% 60%, rgba(255,120,40,0.4), transparent 72%)",
+            "radial-gradient(58% 40% at 50% 50%, rgba(255,58,210,0.92), transparent 72%)," +
+            "radial-gradient(40% 30% at 30% 48%, rgba(96,116,255,0.78), transparent 72%)," +
+            "radial-gradient(44% 32% at 64% 55%, rgba(48,238,150,0.85), transparent 72%)," +
+            "radial-gradient(34% 26% at 82% 50%, rgba(255,150,55,0.7), transparent 72%)",
         }}
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-60 mix-blend-soft-light"
+        className="pointer-events-none absolute inset-0 opacity-75 mix-blend-overlay"
         style={{
           background:
-            "radial-gradient(60% 60% at 50% 50%, rgba(232,46,180,0.9), rgba(40,60,200,0.5) 55%, rgba(20,160,100,0.6) 100%)",
+            "radial-gradient(52% 36% at 50% 50%, rgba(255,60,200,0.95), rgba(70,90,235,0.5) 55%, transparent 78%)",
         }}
       />
 
@@ -141,8 +141,8 @@ export function Hero() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(125% 95% at 50% 45%, transparent 38%, rgba(8,8,10,0.6) 100%)," +
-            "linear-gradient(180deg, rgba(8,8,10,0.7) 0%, transparent 18%, transparent 80%, rgba(8,8,10,0.88) 100%)",
+            "radial-gradient(130% 100% at 50% 45%, transparent 48%, rgba(8,8,10,0.42) 100%)," +
+            "linear-gradient(180deg, rgba(8,8,10,0.55) 0%, transparent 20%, transparent 82%, rgba(8,8,10,0.72) 100%)",
         }}
       />
 

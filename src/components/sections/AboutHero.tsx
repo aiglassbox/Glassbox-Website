@@ -156,13 +156,13 @@ export function AboutHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: EASE, delay: 0.3 }}
-          className="absolute right-6 top-7 max-w-[300px] text-right sm:right-10 sm:top-11"
+          className="absolute inset-x-5 bottom-20 text-left sm:inset-x-auto sm:bottom-auto sm:right-10 sm:top-11 sm:max-w-[300px] sm:text-right"
         >
-          <p className="text-[13px] leading-relaxed text-white/90 sm:text-[15px]">
+          <p className="text-[12px] leading-relaxed text-white/90 sm:text-[15px]">
             Glassbox is a modern creative studio where design, strategy, and
             storytelling grow together.
           </p>
-          <div className="mt-4 flex items-center justify-end gap-3 text-[13px] text-white/80">
+          <div className="mt-3 flex items-center justify-start gap-3 text-[12px] text-white/80 sm:mt-4 sm:justify-end sm:text-[13px]">
             <a href={social.behance} className="transition-colors hover:text-white">BE</a>
             <span className="text-white/30">/</span>
             <a href={social.dribbble} className="transition-colors hover:text-white">DR</a>
