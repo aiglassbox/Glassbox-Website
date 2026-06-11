@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 
 const TEXT =
-  "We’re Glassbox — a creative studio cultivating bold brands, beautiful websites, and ideas that refuse to be ordinary.";
+  "We’re Glassbox, a creative studio cultivating bold brands, beautiful websites, and ideas that refuse to be ordinary.";
 
 function Word({
   children,

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { services } from "@/data/site";
 import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 
-// Accent colour per service — drives the hover dot texture.
+// Accent colour per service, drives the hover dot texture.
 const ACCENTS = ["#ff5a3c", "#4a7cff", "#2fae5f", "#c965d8", "#f6a623"];
 
 // Tiled cross-of-squares pattern in the given hex colour.

@@ -148,7 +148,7 @@ export function AboutHero() {
           transition={{ duration: 0.9, ease: EASE, delay: 0.15 }}
           className="display absolute left-6 top-6 max-w-[13ch] text-balance text-3xl font-semibold leading-[1.04] tracking-tight text-white sm:left-10 sm:top-10 sm:text-5xl lg:text-6xl"
         >
-          Glassbox &mdash; creative ideas that refuse to be ordinary.
+          Glassbox, creative ideas that refuse to be ordinary.
         </motion.h1>
 
         {/* Caption top-right */}
@@ -171,7 +171,7 @@ export function AboutHero() {
           </div>
         </motion.div>
 
-        {/* Brand carousel — inside the box, pinned to the bottom */}
+        {/* Brand carousel, inside the box, pinned to the bottom */}
         <div
           className="absolute inset-x-0 bottom-0 overflow-hidden bg-gradient-to-t from-black/35 to-transparent py-5"
           style={{

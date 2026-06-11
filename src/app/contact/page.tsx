@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Glassbox",
+  title: "Contact - Glassbox",
   description: "Ready for lift off? Let’s talk.",
 };
 
