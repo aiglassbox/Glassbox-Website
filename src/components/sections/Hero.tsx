@@ -175,7 +175,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30, scale: 1.06 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1.1, ease: EASE, delay: 0.35 }}
-          className="wordmark flex items-start justify-center whitespace-nowrap text-white drop-shadow-[0_4px_60px_rgba(0,0,0,0.4)]"
+          className="wordmark flex items-start justify-center whitespace-nowrap text-white/90 drop-shadow-[0_4px_60px_rgba(0,0,0,0.4)]"
         >
           <span
             className="text-[15vw] leading-[0.82]"

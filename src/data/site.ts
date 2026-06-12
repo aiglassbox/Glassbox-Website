@@ -55,24 +55,24 @@ export const stats = [
 export const testimonials = [
   {
     quote:
-      "Working with Glassbox felt like hiring a creative greenhouse for our ideas. Everything grew faster and brighter than we imagined.",
-    name: "Sarah Conor",
-    role: "Founder, Clonify",
-    img: A("yN8oP8ZViEml2iTJPEeku2zEM.jpg"),
+      "Glassbox doesn’t just match your energy, they raise it. We walked in bold and walked out unstoppable.",
+    name: "Kaushik Mukherjee",
+    role: "Co-Founder & COO, SUGAR Cosmetics",
+    img: A("testimonial-sugar.jpg"),
   },
   {
     quote:
-      "Working with Glassbox was a game-changer. They didn’t just design our brand, they captured its soul. Everything feels elevated, intentional, and totally us.",
-    name: "Bruce Lee",
-    role: "Design Director, Maiz",
-    img: A("UhttJHgYv5v9K5nOB1SgfoSJNaE.jpg"),
+      "They made people stop and actually read about life insurance. If that’s not creative alchemy, I don’t know what is.",
+    name: "Jude Gomes",
+    role: "Ageas Federal Life Insurance",
+    img: A("testimonial-ageas.jpg"),
   },
   {
     quote:
-      "From concept to launch, the Glassbox team delivered with clarity, creativity, and style. We’ve never looked more professional, or more ourselves.",
-    name: "John Headphone",
-    role: "UFO, Marcom",
-    img: A("j1bAxPZv9KXkSAWes0FMzAgWh50.jpg"),
+      "Decades of craft, finally given a voice the world could feel. Glassbox found our story before we could even explain it to them.",
+    name: "Kanubhai J. Thakkar",
+    role: "Chairman & MD, Gokul Agro Resources",
+    img: A("testimonial-gokul.jpg"),
   },
 ];
 

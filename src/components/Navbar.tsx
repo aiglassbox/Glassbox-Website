@@ -28,18 +28,11 @@ export function Navbar() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-[60] flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5">
-        {/* Frosted glass strip, fades out at the bottom, no border */}
-        {!open && (
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-36 bg-gradient-to-b from-black/15 to-transparent backdrop-blur-lg"
-            style={{
-              maskImage: "linear-gradient(to bottom, #000 42%, transparent 100%)",
-              WebkitMaskImage: "linear-gradient(to bottom, #000 42%, transparent 100%)",
-            }}
-          />
-        )}
+      <header
+        className={`fixed inset-x-0 top-0 z-[60] flex items-center justify-between px-5 py-4 sm:px-8 sm:py-5 ${
+          open ? "" : "backdrop-blur-[10px]"
+        }`}
+      >
         <Link
           href="/"
           onClick={() => setOpen(false)}

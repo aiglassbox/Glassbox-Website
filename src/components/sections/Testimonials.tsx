@@ -17,13 +17,13 @@ function Card({
 }) {
   return (
     <div className="overflow-hidden rounded-[20px] border border-white/[0.08] bg-ink-850">
-      <div className="relative aspect-[4/3] w-full">
+      <div className="relative aspect-[4/5] w-full">
         <Image
           src={img}
           alt={name}
           fill
           sizes="(max-width:1024px) 100vw, 44vw"
-          className="object-cover object-top"
+          className="object-cover object-center"
         />
       </div>
       <div className="p-7 sm:p-8">
