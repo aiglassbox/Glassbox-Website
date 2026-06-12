@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useRef } from "react";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { projects, type Project } from "@/data/projects";
-import { LogoMark } from "../ui/Logo";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -48,13 +47,10 @@ function StackCard({
             {project.name}
           </div>
 
-          {/* Centered brand lockup */}
+          {/* Centered name */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="flex items-center gap-3 text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.55)]">
-              <LogoMark className="h-9 w-9 sm:h-11 sm:w-11" />
-              <span className="text-4xl font-medium tracking-tight sm:text-6xl">
-                {project.name}
-              </span>
+            <span className="text-4xl font-medium tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.55)] sm:text-6xl">
+              {project.name}
             </span>
           </div>
 
