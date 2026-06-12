@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { projects, getProject } from "@/data/projects";
 import { Reveal } from "@/components/ui/Reveal";
-import { LogoMark } from "@/components/ui/Logo";
 import { CtaProject } from "@/components/sections/CtaProject";
 
 export function generateStaticParams() {
@@ -156,11 +155,8 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
                   {p.name}
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="flex items-center gap-2.5 text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.55)]">
-                    <LogoMark className="h-7 w-7 sm:h-8 sm:w-8" />
-                    <span className="text-2xl font-medium tracking-tight sm:text-3xl">
-                      {p.name}
-                    </span>
+                  <span className="text-2xl font-medium tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.55)] sm:text-3xl">
+                    {p.name}
                   </span>
                 </div>
               </Link>

@@ -43,13 +43,10 @@ function StackCard({
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/35" />
 
-          {/* Centered brand lockup */}
+          {/* Centered name */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="flex items-center gap-3 text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.5)]">
-              <LogoMark className="h-9 w-9 sm:h-11 sm:w-11" />
-              <span className="text-4xl font-medium tracking-tight sm:text-6xl">
-                {project.name}
-              </span>
+            <span className="text-4xl font-medium tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.5)] sm:text-6xl">
+              {project.name}
             </span>
           </div>
 

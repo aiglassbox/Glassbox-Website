@@ -6,9 +6,28 @@ export type Post = {
   date: string;
   cover: string;
   body: string[];
+  inset?: string;
 };
 
 export const posts: Post[] = [
+  {
+    slug: "agency-website-redesign-what-we-learned-building-glassbox-co",
+    title: "Agency website redesign: what we learned building Glassbox.co",
+    date: "June 11, 2026",
+    cover: A("blog-glassbox-redesign.jpg"),
+    inset: A("blog-glassbox-inset.jpg"),
+    body: [
+      "Every agency reaches the moment when the cobbler’s children finally need shoes. For us, that was our own website. We spend our days sharpening other brands, and somewhere along the way our own digital home had quietly fallen behind the work we were proud of.",
+      "The old Glassbox site wasn’t broken. It loaded, it ranked, it told people roughly who we were. But it had become a brochure: a tidy, templated thing that described a creative studio without ever feeling like one. The motion was flat, the case studies were buried, and the whole experience said “safe” when the work it represented was anything but. A redesign had been on the list for over a year. The honest reason it kept slipping was time, the one resource a busy studio never has spare.",
+      "So we tried something different. Instead of blocking out six weeks and a small team, we rebuilt Glassbox.co with Claude as a hands-on collaborator. The idea was simple: bring taste, references, and direction; let AI handle the heavy lifting of turning that direction into real, production code.",
+      "The workflow looked less like briefing a contractor and more like art-directing in real time. We’d describe a section, drop in a reference, or paste a screen recording of an interaction we admired, and Claude would build it, live, in the actual codebase. We’d react to what we saw, refine the language, nudge the spacing, change the easing, and watch the next version appear in seconds. It felt closer to sketching than to engineering.",
+      "The speed was the obvious unlock. Things that would normally sit in a backlog for a sprint, a sticky-stack scroll on the projects, a tilted ticker of imagery behind the wordmark, a progressive blur that fades cleanly into the footer, went from “wouldn’t it be nice” to shipped in an afternoon. When the cost of trying an idea drops to almost nothing, you try more of them, and the work gets braver.",
+      "But speed wasn’t the real lesson. The real lesson was where the line sits. AI was extraordinary at the scaffolding: layout, responsive behavior, animation code, the fiddly cross-browser details that usually drain a designer’s energy. What it could not do was decide whether something was good. Every meaningful call, the rotation angle that felt right, the gradient that read as “us,” the moment a transition tipped from elegant into too much, was still ours. AI gave us a hundred doors. Choosing which to walk through was the job.",
+      "We also learned how much clear references matter. The sharper our input, a recording, an exact hex value, a single sentence of intent, the closer the first result landed. Vague direction produced vague work, exactly as it does with any collaborator. Building with AI didn’t remove the need for a point of view; it amplified whatever point of view we brought.",
+      "There were rough edges. We chased the occasional layout that looked right in one viewport and broke in another. We learned to verify everything, to treat “it compiles” as the start of the conversation, not the end. And we kept a human hand firmly on brand decisions, because a site that merely works is not the same as a site that feels like the studio behind it.",
+      "Glassbox.co is the result: faster to build, more expressive than anything we’d have shipped the old way, and genuinely a reflection of how we work now. The site isn’t finished, sites never are, but for the first time our digital home moves at the same pace as our ideas. If you’re an agency staring at your own outdated homepage, that’s the takeaway. The tools have changed. The taste still has to be yours.",
+    ],
+  },
   {
     slug: "inside-the-studio-our-process-for-crafting-a-standout-identity",
     title: "Inside the Studio: Our Process for Crafting a Standout Identity",
