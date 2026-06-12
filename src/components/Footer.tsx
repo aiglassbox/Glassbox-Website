@@ -19,7 +19,13 @@ export function Footer() {
     <footer className="relative z-[2] overflow-hidden bg-[#08080a] px-5 pb-8 pt-20 sm:px-8 sm:pt-24">
       {/* Giant wordmark */}
       <div className="mb-14 select-none sm:mb-20">
-        <h2 className="wordmark bg-gradient-to-b from-black to-white bg-clip-text text-center text-[15vw] font-bold leading-[0.82] tracking-[0.02em] text-transparent lg:text-[16vw] lg:tracking-[0.04em]">
+        <h2
+          className="wordmark bg-clip-text text-center text-[15vw] font-bold leading-[0.82] tracking-[0.02em] text-transparent lg:text-[16vw] lg:tracking-[0.04em]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to bottom, rgba(10,13,13,0) 31%, rgba(255,255,255,0.55) 81%)",
+          }}
+        >
           GLASSBOX
         </h2>
       </div>
