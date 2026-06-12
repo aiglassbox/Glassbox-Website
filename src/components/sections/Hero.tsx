@@ -191,7 +191,7 @@ export function Hero() {
           transition={{ duration: 0.9, ease: EASE, delay: 0.7 }}
           className="mt-6 max-w-md text-balance text-[19px] font-medium leading-snug tracking-tight text-white sm:mt-8 sm:text-[22px] lg:text-[26px]"
         >
-          We&rsquo;re Glassbox, a creative studio based in Gotham.
+          We&rsquo;re Glassbox, a creative studio based in Mumbai.
         </motion.p>
       </div>
 

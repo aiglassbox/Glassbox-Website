@@ -62,7 +62,7 @@ export function ContactForm() {
             >
               <div className="space-y-5">
                 <Field label="Name" placeholder="Bruce Lee" />
-                <Field label="Email" type="email" placeholder="example@glassbox.io" />
+                <Field label="Email" type="email" placeholder="example@theglassbox.co" />
                 <label className="block">
                   <span className="mb-2 block text-[15px] text-white/90">
                     Message

@@ -1,8 +1,10 @@
 export const A = (f: string) => `/assets/${f}`;
 
 export const social = {
-  email: "hello@glassbox.io",
-  mailto: "mailto:hello@glassbox.io",
+  email: "hello@theglassbox.co",
+  mailto: "mailto:hello@theglassbox.co",
+  instagram: "https://www.instagram.com/lifeatglassbox/",
+  linkedin: "https://www.linkedin.com/company/glassboxco/posts/?feedView=all",
   behance: "https://www.behance.net/",
   dribbble: "https://dribbble.com/",
   x: "https://x.com/",

@@ -10,10 +10,8 @@ const studioLinks = [
 ];
 
 const socialLinks = [
-  { label: "Instagram", href: social.behance },
-  { label: "Twitter", href: social.x },
-  { label: "LinkedIn", href: social.dribbble },
-  { label: "Are.na", href: "#" },
+  { label: "Instagram", href: social.instagram },
+  { label: "LinkedIn", href: social.linkedin },
 ];
 
 export function Footer() {
@@ -62,7 +60,7 @@ export function Footer() {
           >
             {social.email}
           </a>
-          <p className="text-[16px] text-muted">Gotham, NY</p>
+          <p className="text-[16px] text-muted">Mumbai, IN</p>
         </div>
 
         <div className="flex flex-col gap-2">
@@ -76,8 +74,8 @@ export function Footer() {
 
       {/* Bottom bar */}
       <div className="mt-10 flex flex-col gap-3 text-[13px] text-muted sm:flex-row sm:items-center sm:justify-between">
-        <span>&copy; 2026 Glassbox Studio. All rights reserved.</span>
-        <span>A creative studio based in Gotham.</span>
+        <span>&copy; 2026 Glassbox. All rights reserved.</span>
+        <span>A creative studio based in Mumbai.</span>
       </div>
     </footer>
   );
