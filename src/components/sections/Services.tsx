@@ -4,6 +4,9 @@ import Link from "next/link";
 import { services } from "@/data/site";
 import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 
+// Accent colour per service, drives the hover block texture.
+const ACCENTS = ["#ff5a3c", "#4a7cff", "#2fae5f", "#c965d8", "#f6a623"];
+
 // The Glassbox brand mark dissolves into a field of modular square blocks on a
 // uniform grid — adjacent filled cells merge into bigger blocks with sharp
 // corners. This texture recreates that: full-cell squares scattered across an
@@ -68,15 +71,15 @@ export function Services() {
 
         {/* Service rows */}
         <RevealGroup className="mt-12 flex flex-col gap-3" stagger={0.06}>
-          {services.map((s) => (
+          {services.map((s, i) => (
             <RevealItem key={s.no}>
               <div className="group relative overflow-hidden rounded-2xl bg-white/[0.02] transition-colors duration-300 hover:bg-white/[0.035]">
                 {/* Hover dot texture */}
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-[0.16]"
+                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-[0.22]"
                   style={{
-                    backgroundImage: blocks("#ffffff"),
+                    backgroundImage: blocks(ACCENTS[i % ACCENTS.length]),
                     backgroundSize: "128px 96px",
                     maskImage:
                       "linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent)",
