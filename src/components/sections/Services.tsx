@@ -4,16 +4,31 @@ import Link from "next/link";
 import { services } from "@/data/site";
 import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 
-// Accent colour per service, drives the hover dot texture.
+// Accent colour per service, drives the hover pixel texture.
 const ACCENTS = ["#ff5a3c", "#4a7cff", "#2fae5f", "#c965d8", "#f6a623"];
 
-// Tiled cross-of-squares pattern in the given hex colour.
-function dots(hex: string) {
+// Scattered pixel-block field in the given hex colour — the Glassbox brand
+// element. Tiles seamlessly across a 40px grid.
+function pixels(hex: string) {
   const c = encodeURIComponent(hex);
+  // 4px squares on an 8px grid, deterministically scattered for a digital,
+  // pixelated texture that still leaves plenty of gaps for text to read.
+  const cells = [
+    [8, 0], [24, 0], [32, 0],
+    [0, 8], [16, 8], [24, 8],
+    [8, 16], [32, 16],
+    [0, 24], [16, 24], [24, 24],
+    [8, 32], [16, 32], [32, 32],
+  ];
+  const rects = cells
+    .map(([x, y]) => `%3Crect x='${x}' y='${y}' width='4' height='4'/%3E`)
+    .join("");
   return (
-    "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cg fill='" +
+    "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cg fill='" +
     c +
-    "'%3E%3Crect x='19' y='19' width='6' height='6'/%3E%3Crect x='19' y='7' width='6' height='6'/%3E%3Crect x='19' y='31' width='6' height='6'/%3E%3Crect x='7' y='19' width='6' height='6'/%3E%3Crect x='31' y='19' width='6' height='6'/%3E%3C/g%3E%3C/svg%3E\")"
+    "'%3E" +
+    rects +
+    "%3C/g%3E%3C/svg%3E\")"
   );
 }
 
@@ -51,10 +66,10 @@ export function Services() {
                 {/* Hover dot texture */}
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-80"
                   style={{
-                    backgroundImage: dots(ACCENTS[i % ACCENTS.length]),
-                    backgroundSize: "44px 44px",
+                    backgroundImage: pixels(ACCENTS[i % ACCENTS.length]),
+                    backgroundSize: "40px 40px",
                     maskImage:
                       "linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent)",
                     WebkitMaskImage:
