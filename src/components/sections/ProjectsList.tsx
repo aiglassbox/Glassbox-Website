@@ -4,12 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
+import { Reveal } from "../ui/Reveal";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 export function ProjectsList() {
-  const total = projects.length;
-
   return (
     <>
       <section className="px-5 pt-28 sm:px-8 sm:pt-36">
@@ -40,32 +39,26 @@ export function ProjectsList() {
         </motion.div>
       </section>
 
-      {/* Sticky stacking cards: each pins below the header and the next slides
-          straight up over it (no scale, all share the same pin line). */}
-      <div className="relative mt-12 px-3 pb-16 sm:px-4">
+      {/* Full-width work cards, normal scroll */}
+      <div className="mt-10 flex flex-col gap-4 px-3 pb-24 sm:gap-5 sm:px-4">
         {projects.map((p, i) => (
-          <div key={p.slug} className="sticky top-[72px]">
+          <Reveal key={p.slug} delay={(i % 2) * 0.05}>
             <Link
               href={`/projects/${p.slug}`}
-              className="group relative block h-[calc(100svh-92px)] w-full overflow-hidden rounded-[24px] bg-ink-800 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)]"
+              className="group relative block aspect-[16/10] w-full overflow-hidden rounded-[22px] bg-ink-800 sm:aspect-[16/8]"
             >
               <Image
                 src={p.cover}
                 alt={p.name}
                 fill
                 sizes="100vw"
-                className="object-cover transition-transform duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
+                className="object-cover transition-transform duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/35" />
 
               {/* Name pill */}
               <div className="absolute right-5 top-5 rounded-full bg-white/[0.14] px-4 py-1.5 text-[13px] font-medium text-white backdrop-blur-md">
                 {p.name}
-              </div>
-
-              {/* Index marker */}
-              <div className="absolute left-6 top-6 font-mono text-[13px] text-white/70">
-                _{String(i + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
               </div>
 
               {/* Centered name */}
@@ -85,7 +78,7 @@ export function ProjectsList() {
                 View project <span>&#8599;</span>
               </div>
             </Link>
-          </div>
+          </Reveal>
         ))}
       </div>
     </>
