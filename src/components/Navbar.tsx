@@ -10,7 +10,7 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 const menu = [
   { label: "Home", href: "/" },
-  { label: "Projects", href: "/projects" },
+  { label: "Works", href: "/projects" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },

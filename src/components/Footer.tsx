@@ -4,7 +4,7 @@ import { NewsletterForm } from "./ui/NewsletterForm";
 
 const studioLinks = [
   { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
+  { label: "Works", href: "/projects" },
   { label: "Contact", href: "/contact" },
   { label: "Blog", href: "/blog" },
 ];

@@ -88,7 +88,7 @@ export function Projects({ limit = 5 }: { limit?: number }) {
         <Reveal className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="display text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
-              Projects.
+              Works.
             </h2>
             <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-muted sm:text-[16px]">
               Every pixel comes from a clear strategy built to help you grow.
