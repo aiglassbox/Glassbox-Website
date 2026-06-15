@@ -22,7 +22,7 @@ function StackCard({
     <div className="sticky top-[72px]">
       <Link
         href={`/projects/${project.slug}`}
-        className="group relative block h-[calc(100svh-92px)] w-full overflow-hidden rounded-[24px] bg-ink-800 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)]"
+        className="group relative block h-[calc(100svh-220px)] max-h-[760px] w-full overflow-hidden rounded-[24px] bg-ink-800 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8)]"
       >
         <Image
           src={project.cover}
