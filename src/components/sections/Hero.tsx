@@ -178,7 +178,7 @@ export function Hero() {
           className="wordmark flex items-start justify-center whitespace-nowrap text-white/90 drop-shadow-[0_4px_60px_rgba(0,0,0,0.4)]"
         >
           <span
-            className="text-[15vw] leading-[0.82]"
+            className="text-[15vw] leading-[0.82] lg:text-[12vw]"
             style={{ fontFamily: "var(--font-utara), var(--font-archivo), sans-serif" }}
           >
             GLASSBOX
