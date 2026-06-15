@@ -4,27 +4,35 @@ import Link from "next/link";
 import { services } from "@/data/site";
 import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 
-// Accent colour per service, drives the hover pixel texture.
-const ACCENTS = ["#ff5a3c", "#4a7cff", "#2fae5f", "#c965d8", "#f6a623"];
+// The Glassbox brand mark dissolves into a field of modular square blocks on a
+// uniform grid — adjacent filled cells merge into bigger blocks with sharp
+// corners. This texture recreates that: full-cell squares scattered across an
+// 8x6 grid of 16px cells (128x96 tile), tiling seamlessly in both axes.
+const BLOCK = 16;
+const COLS = 8;
+const ROWS = 6;
+const FILLED: [number, number][] = [
+  [1, 0], [2, 0], [5, 0],
+  [2, 1], [4, 1], [5, 1], [7, 1],
+  [0, 2], [2, 2], [3, 2], [6, 2],
+  [0, 3], [3, 3], [4, 3], [6, 3], [7, 3],
+  [1, 4], [3, 4], [5, 4], [6, 4],
+  [1, 5], [4, 5], [7, 5],
+];
 
-// Scattered pixel-block field in the given hex colour — the Glassbox brand
-// element. Tiles seamlessly across a 40px grid.
-function pixels(hex: string) {
+function blocks(hex: string) {
   const c = encodeURIComponent(hex);
-  // 4px squares on an 8px grid, deterministically scattered for a digital,
-  // pixelated texture that still leaves plenty of gaps for text to read.
-  const cells = [
-    [8, 0], [24, 0], [32, 0],
-    [0, 8], [16, 8], [24, 8],
-    [8, 16], [32, 16],
-    [0, 24], [16, 24], [24, 24],
-    [8, 32], [16, 32], [32, 32],
-  ];
-  const rects = cells
-    .map(([x, y]) => `%3Crect x='${x}' y='${y}' width='4' height='4'/%3E`)
-    .join("");
+  // +1 bleed so merged neighbours have no hairline seam when the tile scales.
+  const rects = FILLED.map(
+    ([col, row]) =>
+      `%3Crect x='${col * BLOCK}' y='${row * BLOCK}' width='${BLOCK + 1}' height='${BLOCK + 1}'/%3E`
+  ).join("");
   return (
-    "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cg fill='" +
+    "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='" +
+    COLS * BLOCK +
+    "' height='" +
+    ROWS * BLOCK +
+    "'%3E%3Cg fill='" +
     c +
     "'%3E" +
     rects +
@@ -60,16 +68,16 @@ export function Services() {
 
         {/* Service rows */}
         <RevealGroup className="mt-12 flex flex-col gap-3" stagger={0.06}>
-          {services.map((s, i) => (
+          {services.map((s) => (
             <RevealItem key={s.no}>
               <div className="group relative overflow-hidden rounded-2xl bg-white/[0.02] transition-colors duration-300 hover:bg-white/[0.035]">
                 {/* Hover dot texture */}
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-80"
+                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-[0.16]"
                   style={{
-                    backgroundImage: pixels(ACCENTS[i % ACCENTS.length]),
-                    backgroundSize: "40px 40px",
+                    backgroundImage: blocks("#ffffff"),
+                    backgroundSize: "128px 96px",
                     maskImage:
                       "linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent)",
                     WebkitMaskImage:
