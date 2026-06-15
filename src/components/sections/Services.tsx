@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { services } from "@/data/site";
 import { Reveal, RevealGroup, RevealItem } from "../ui/Reveal";
 
@@ -58,15 +57,6 @@ export function Services() {
               goals.
             </p>
           </div>
-          <Link
-            href="/contact"
-            className="group inline-flex items-center gap-2 text-[15px] text-white underline-offset-[6px] hover:underline"
-          >
-            Get in touch
-            <span className="transition-transform duration-300 group-hover:translate-x-1">
-              &rarr;
-            </span>
-          </Link>
         </Reveal>
 
         {/* Service rows */}

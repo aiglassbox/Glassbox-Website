@@ -12,7 +12,6 @@ export default function BlogPage() {
   return (
     <>
       <PageHero
-        eyebrow="[ Blog ]"
         title="Creative Dispatch"
         subtitle="Daily articles, inspiration, and resources by our lovely team."
       />
