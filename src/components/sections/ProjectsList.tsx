@@ -69,7 +69,7 @@ export function ProjectsList() {
               </div>
 
               {/* Corner meta */}
-              <div className="absolute bottom-6 left-6 flex items-center gap-3 text-[13px] text-white/75">
+              <div className="absolute right-5 top-16 flex items-center justify-end gap-3 text-[13px] text-white/75">
                 <span className="font-mono">{p.year}</span>
                 <span className="text-white/30">/</span>
                 <span>{p.scope}</span>
