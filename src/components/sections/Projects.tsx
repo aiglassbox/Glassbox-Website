@@ -46,7 +46,7 @@ function StackCard({
         </div>
 
         {/* Corner meta */}
-        <div className="absolute bottom-6 left-6 flex items-center gap-3 text-[13px] text-white/75">
+        <div className="absolute right-6 top-6 flex items-center justify-end gap-3 text-[13px] text-white/75">
           <span className="font-mono">{project.year}</span>
           <span className="text-white/30">/</span>
           <span>{project.scope}</span>
