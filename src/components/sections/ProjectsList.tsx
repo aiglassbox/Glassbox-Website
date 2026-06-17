@@ -56,11 +56,6 @@ export function ProjectsList() {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/35" />
 
-              {/* Name pill */}
-              <div className="absolute right-5 top-5 rounded-full bg-white/[0.14] px-4 py-1.5 text-[13px] font-medium text-white backdrop-blur-md">
-                {p.name}
-              </div>
-
               {/* Centered name */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-4xl font-medium tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.55)] sm:text-6xl">
@@ -69,7 +64,7 @@ export function ProjectsList() {
               </div>
 
               {/* Corner meta */}
-              <div className="absolute right-5 top-16 flex items-center justify-end gap-3 text-[13px] text-white/75">
+              <div className="absolute right-6 top-6 flex items-center justify-end gap-3 text-[13px] text-white/75">
                 <span className="font-mono">{p.year}</span>
                 <span className="text-white/30">/</span>
                 <span>{p.scope}</span>
