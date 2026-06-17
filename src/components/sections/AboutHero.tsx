@@ -89,11 +89,9 @@ export function AboutHero() {
             storytelling grow together.
           </p>
           <div className="mt-3 flex items-center justify-start gap-3 text-[12px] text-white/80 sm:mt-4 sm:justify-end sm:text-[13px]">
-            <a href={social.behance} className="transition-colors hover:text-white">BE</a>
+            <a href={social.instagram} className="transition-colors hover:text-white">IG</a>
             <span className="text-white/30">/</span>
-            <a href={social.dribbble} className="transition-colors hover:text-white">DR</a>
-            <span className="text-white/30">/</span>
-            <a href={social.x} className="transition-colors hover:text-white">X</a>
+            <a href={social.linkedin} className="transition-colors hover:text-white">LI</a>
           </div>
         </motion.div>
 
