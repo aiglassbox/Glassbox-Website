@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { team, awards, stats } from "@/data/site";
 import { AboutHero } from "@/components/sections/AboutHero";
-import { ClientLogos } from "@/components/sections/ClientLogos";
 import { IntroGlobe } from "@/components/sections/IntroGlobe";
 import { Counter } from "@/components/sections/Stats";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
@@ -47,8 +46,6 @@ export default function AboutPage() {
           </RevealGroup>
         </div>
       </section>
-
-      <ClientLogos label="Brands we’ve had the privilege to work with" />
 
       {/* Team */}
       <section className="section-pad pt-0">

@@ -1,6 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
 import { ScrollReveal } from "@/components/sections/ScrollReveal";
-import { ClientLogos } from "@/components/sections/ClientLogos";
 import { Projects } from "@/components/sections/Projects";
 import { Services } from "@/components/sections/Services";
 import { VideoSection } from "@/components/sections/VideoSection";
@@ -14,7 +13,6 @@ export default function Home() {
     <>
       <Hero />
       <ScrollReveal />
-      <ClientLogos />
       <Projects limit={5} />
       <Services />
       <VideoSection />
