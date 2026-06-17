@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { social } from "@/data/site";
+import { ClientLogosMarquee } from "../ui/ClientLogosMarquee";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -55,81 +56,6 @@ function GradientArt() {
   );
 }
 
-const brands = [
-  { name: "Coral", icon: "coral" },
-  { name: "Clonify", icon: "clonify" },
-  { name: "Blob", icon: "blob" },
-  { name: "Yallo!", icon: "yallo" },
-  { name: "Bliss+", icon: "bliss" },
-  { name: "Flea", icon: "flea" },
-  { name: "Polltree", icon: "poll" },
-  { name: "Winkk", icon: "winkk" },
-] as const;
-
-function BrandIcon({ type }: { type: string }) {
-  const c = "h-5 w-5";
-  switch (type) {
-    case "coral":
-      return (
-        <svg viewBox="0 0 24 24" className={c} fill="currentColor" aria-hidden>
-          <path d="M12 2.5l7 4v9l-7 4-7-4v-9l7-4z" opacity="0.9" />
-          <circle cx="12" cy="11" r="3" fill="#08080a" />
-        </svg>
-      );
-    case "clonify":
-      return (
-        <svg viewBox="0 0 24 24" className={c} fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
-          <path d="M12 3l7 4v8l-7 4-7-4V7l7-4z" />
-          <circle cx="12" cy="11" r="2.4" fill="currentColor" stroke="none" />
-        </svg>
-      );
-    case "blob":
-      return (
-        <svg viewBox="0 0 24 24" className={c} fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden>
-          <ellipse cx="12" cy="12" rx="9" ry="6" />
-          <ellipse cx="12" cy="12" rx="5.5" ry="3.4" />
-          <circle cx="12" cy="12" r="1.4" fill="currentColor" />
-        </svg>
-      );
-    case "yallo":
-      return (
-        <svg viewBox="0 0 24 24" className={c} fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
-          <circle cx="12" cy="12" r="9" />
-          <path d="M7 7l10 10" />
-        </svg>
-      );
-    case "bliss":
-      return (
-        <svg viewBox="0 0 24 24" className={c} fill="currentColor" aria-hidden>
-          {[0, 45, 90, 135].map((a) => (
-            <rect key={a} x="10.6" y="3" width="2.8" height="18" rx="1.4" transform={`rotate(${a} 12 12)`} />
-          ))}
-        </svg>
-      );
-    case "flea":
-      return (
-        <svg viewBox="0 0 24 24" className={c} fill="currentColor" aria-hidden>
-          <path d="M12 4l8 15H4l8-15z" />
-        </svg>
-      );
-    case "poll":
-      return (
-        <svg viewBox="0 0 24 24" className={c} fill="currentColor" aria-hidden>
-          {[0, 60, 120].map((a) => (
-            <rect key={a} x="11" y="2.5" width="2" height="19" rx="1" transform={`rotate(${a} 12 12)`} />
-          ))}
-          <circle cx="12" cy="12" r="2.4" />
-        </svg>
-      );
-    default: // winkk
-      return (
-        <svg viewBox="0 0 24 24" className={c} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden>
-          <path d="M3 12a9 9 0 0 0 18 0" />
-        </svg>
-      );
-  }
-}
-
 export function AboutHero() {
   return (
     <section className="px-3 pt-24 sm:px-4 sm:pt-28">
@@ -181,21 +107,7 @@ export function AboutHero() {
               "linear-gradient(to right, transparent, #000 9%, #000 91%, transparent)",
           }}
         >
-          <motion.div
-            className="flex w-max"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 28, ease: "linear", repeat: Infinity }}
-          >
-            {[...brands, ...brands].map((b, i) => (
-              <span
-                key={`${b.name}-${i}`}
-                className="mr-14 flex items-center gap-2.5 whitespace-nowrap text-[22px] font-medium tracking-tight text-white/85"
-              >
-                <BrandIcon type={b.icon} />
-                {b.name}
-              </span>
-            ))}
-          </motion.div>
+          <ClientLogosMarquee duration={32} logoClassName="h-6 opacity-90 sm:h-7" />
         </div>
       </motion.div>
     </section>

@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { projects, type Project } from "@/data/projects";
-import { LogoMark } from "../ui/Logo";
+import { ClientLogosMarquee } from "../ui/ClientLogosMarquee";
 import { Reveal } from "../ui/Reveal";
 
 function StackCard({
@@ -64,23 +63,9 @@ export function Projects({ limit = 5 }: { limit?: number }) {
 
   return (
     <section id="works" className="relative bg-[#08080a] pt-20">
-      {/* Brand logo marquee, seamless scroll */}
-      <div className="overflow-hidden border-y border-white/[0.06] py-7">
-        <motion.div
-          className="flex w-max"
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{ duration: 32, ease: "linear", repeat: Infinity }}
-        >
-          {[...projects, ...projects, ...projects, ...projects].map((p, i) => (
-            <span
-              key={`${p.slug}-${i}`}
-              className="mr-14 flex items-center gap-2.5 whitespace-nowrap text-[26px] font-medium tracking-tight text-white/20"
-            >
-              <LogoMark className="h-6 w-6" />
-              {p.name}
-            </span>
-          ))}
-        </motion.div>
+      {/* Client logo marquee, seamless scroll */}
+      <div className="overflow-hidden border-y border-white/[0.06] py-8">
+        <ClientLogosMarquee duration={40} logoClassName="h-6 opacity-45 sm:h-7" />
       </div>
 
       {/* Header */}
