@@ -9,6 +9,12 @@ const studioLinks = [
   { label: "Blog", href: "/blog" },
 ];
 
+const companyLinks = [
+  "KOMERZ",
+  "KOMERZ | PATHFORMANCE",
+  "KOMERZ | GREAT WINES DIRECT",
+];
+
 const socialLinks = [
   { label: "Instagram", href: social.instagram },
   { label: "LinkedIn", href: social.linkedin },
@@ -52,15 +58,13 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="flex flex-col gap-2">
-          <p className="eyebrow mb-2">Contact</p>
-          <a
-            href={social.mailto}
-            className="w-fit text-[16px] text-white/90 transition-colors hover:text-white"
-          >
-            {social.email}
-          </a>
-          <p className="text-[16px] text-muted">Mumbai, IN</p>
+        <div className="flex flex-col gap-4">
+          <p className="eyebrow">Company</p>
+          {companyLinks.map((c) => (
+            <span key={c} className="w-fit text-[16px] text-white/90">
+              {c}
+            </span>
+          ))}
         </div>
 
         <div className="flex flex-col gap-2">
