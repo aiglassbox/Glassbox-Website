@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { social } from "@/data/site";
 import { NewsletterForm } from "./ui/NewsletterForm";
 
@@ -25,9 +26,13 @@ export function Footer() {
     <footer className="relative z-[2] overflow-hidden bg-[#08080a] px-5 pb-8 pt-20 sm:px-8 sm:pt-24">
       {/* Giant wordmark */}
       <div className="mb-14 select-none sm:mb-20">
-        <h2 className="wordmark text-center text-[15vw] font-bold leading-[0.82] tracking-[0.02em] text-white/55 lg:text-[16vw] lg:tracking-[0.04em]">
-          GLASSBOX
-        </h2>
+        <Image
+          src="/assets/glassbox-wordmark.png"
+          alt="Glassbox"
+          width={2123}
+          height={320}
+          className="mx-auto h-auto w-full opacity-[0.55]"
+        />
       </div>
 
       {/* Columns */}
