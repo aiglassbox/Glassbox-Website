@@ -46,6 +46,15 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-4">
+          <p className="eyebrow">Company</p>
+          {companyLinks.map((c) => (
+            <span key={c} className="w-fit text-[16px] text-white/90">
+              {c}
+            </span>
+          ))}
+        </div>
+
+        <div className="flex flex-col gap-4">
           <p className="eyebrow">Social</p>
           {socialLinks.map((l) => (
             <a
@@ -55,15 +64,6 @@ export function Footer() {
             >
               {l.label}
             </a>
-          ))}
-        </div>
-
-        <div className="flex flex-col gap-4">
-          <p className="eyebrow">Company</p>
-          {companyLinks.map((c) => (
-            <span key={c} className="w-fit text-[16px] text-white/90">
-              {c}
-            </span>
           ))}
         </div>
 
