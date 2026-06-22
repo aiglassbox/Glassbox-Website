@@ -187,12 +187,15 @@ export function Hero() {
             className="h-auto w-[80vw] lg:w-[64vw]"
           />
         </motion.h1>
+      </div>
 
+      {/* Tagline, pinned just above the scroll cue */}
+      <div className="absolute bottom-[92px] left-1/2 z-10 w-full max-w-md -translate-x-1/2 px-4 text-center sm:bottom-28">
         <motion.p
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: EASE, delay: 0.7 }}
-          className="mt-6 max-w-md text-balance text-[19px] font-medium leading-snug tracking-tight text-white sm:mt-8 sm:text-[22px] lg:-mt-2 lg:text-[26px]"
+          className="text-balance text-[19px] font-medium leading-snug tracking-tight text-white sm:text-[22px] lg:text-[26px]"
         >
           We&rsquo;re Glassbox, a creative studio based in Mumbai.
         </motion.p>
