@@ -182,7 +182,7 @@ export function Hero() {
             src={A("glassbox-komerz.png")}
             alt="Glassbox, a Komerz company"
             width={2400}
-            height={517}
+            height={519}
             priority
             className="h-auto w-[80vw] lg:w-[64vw]"
           />
