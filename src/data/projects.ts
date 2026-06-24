@@ -20,7 +20,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "insurance",
-    name: "Insurance Player",
+    name: "Ageas Federal",
     card: A("proj-insurance-cover.jpg"),
     cover: A("proj-insurance-cover.jpg"),
     gallery: [A("proj-insurance-1.jpg"), A("proj-insurance-2.jpg")],
@@ -39,7 +39,7 @@ export const projects: Project[] = [
   },
   {
     slug: "uk-coffee",
-    name: "UK Coffee",
+    name: "Beanies",
     card: A("proj-coffee-cover.jpg"),
     cover: A("proj-coffee-cover.jpg"),
     gallery: [A("proj-coffee-1.jpg"), A("proj-coffee-2.jpg")],
@@ -59,7 +59,7 @@ export const projects: Project[] = [
   },
   {
     slug: "ev-player",
-    name: "EV Player",
+    name: "TATA EV",
     card: A("proj-ev-cover.jpg"),
     cover: A("proj-ev-cover.jpg"),
     gallery: [A("proj-ev-1.jpg"), A("proj-ev-2.jpg")],
@@ -79,7 +79,7 @@ export const projects: Project[] = [
   },
   {
     slug: "footwear-brand",
-    name: "Footwear Brand",
+    name: "Bata",
     card: A("proj-footwear-cover.jpg"),
     cover: A("proj-footwear-cover.jpg"),
     gallery: [A("proj-footwear-1.jpg"), A("proj-footwear-2.jpg")],
@@ -98,7 +98,7 @@ export const projects: Project[] = [
   },
   {
     slug: "pan-asian-restaurant",
-    name: "Pan-Asian Restaurant",
+    name: "FOO",
     card: A("proj-restaurant-cover.jpg"),
     cover: A("proj-restaurant-cover.jpg"),
     gallery: [A("proj-restaurant-1.jpg"), A("proj-restaurant-2.jpg")],
