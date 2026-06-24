@@ -33,19 +33,6 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
     { label: "Year", value: project.year },
     { label: "Scope", value: project.scope },
     { label: "Timeline", value: project.timeline },
-    {
-      label: "Live project",
-      value: (
-        <a
-          href={project.preview}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-1.5 transition-opacity hover:opacity-70"
-        >
-          Preview <span aria-hidden>&#8599;</span>
-        </a>
-      ),
-    },
   ];
 
   return (
