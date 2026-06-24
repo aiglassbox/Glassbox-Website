@@ -78,32 +78,32 @@ export const testimonials = [
 
 export const faqs = [
   {
-    q: "What’s included in a the monthly package?",
-    a: "Each monthly package includes a set number of design or development hours, dedicated project management, weekly updates, and priority support. We tailor it to fit your needs, whether that’s ongoing branding, web updates, or new creative assets.",
+    q: "How do you actually charge, retainer or project?",
+    a: "Both, depending on the mandate. Brand transformations run as projects; media and performance run as ongoing engagements. Either way, the commercial model is built around outcomes, not timesheets.",
   },
   {
-    q: "How long does a project usually take?",
-    a: "Timelines depend on the scope, but most branding projects take 2–3 weeks, and full website builds range from 3–6 weeks. We’ll always give you a clear timeline upfront, and stick to it.",
+    q: "Are you a creative agency or a media agency?",
+    a: "Both, on purpose. Brand, media, and commerce under one roof is the point — it's how the idea and the spend stay accountable to the same number.",
   },
   {
-    q: "Do you offer ongoing support after launch?",
-    a: "Yes, we offer flexible retainers and care plans after launch, covering everything from small content tweaks and performance monitoring to ongoing design and development support.",
+    q: "Do you do media buying and procurement, not just creative?",
+    a: "Yes. Planning, buying, procurement, performance, and commerce — a full 360 model. It's two decades of our founding team's core craft.",
   },
   {
-    q: "Can I hire you for just a logo or one-off design?",
-    a: "Yes, we take on one-off projects like logos, pitch decks, or landing pages. If it’s a good fit, we’re happy to jump in and help.",
+    q: "What's this GEO / AEO thing you keep mentioning?",
+    a: "Generative and Answer Engine Optimisation — making your brand the one AI search recommends. Search is moving from a list of links to a single answer. We make sure that answer is you.",
   },
   {
-    q: "What platforms do you build websites on?",
-    a: "We primarily work with Framer, Webflow, and Shopify, but we’re flexible depending on your project needs and tech stack.",
+    q: "Where do you work?",
+    a: "Out of Mumbai and the UK, for brands scaling across India and international markets.",
   },
   {
-    q: "How do payments work?",
-    a: "For fixed-scope projects, we split payments into 50% upfront and 50% upon completion. For monthly retainers, payments are made at the start of each billing cycle. We accept most major payment methods.",
+    q: "We're a legacy brand. Can you make us relevant without losing what we are?",
+    a: "It's our specialty. We've de-aged 17-to-200-year-old institutions for the next generation while protecting the trust they were built on.",
   },
   {
-    q: "What if I’m not happy with the first concept?",
-    a: "No problem, that’s part of the process. We include multiple rounds of revisions to ensure you’re completely happy with the final result. Your feedback helps us shape it just right.",
+    q: "How do we start?",
+    a: "One conversation. Tell us the number you need to move.",
   },
 ];
 
