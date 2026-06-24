@@ -76,7 +76,7 @@ export function Projects({ limit = 5 }: { limit?: number }) {
               Works.
             </h2>
             <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-muted sm:text-[16px]">
-              Every pixel comes from a clear strategy built to help you grow.
+              Brands that needed to move a number. Work that moved it.
             </p>
           </div>
           <Link
