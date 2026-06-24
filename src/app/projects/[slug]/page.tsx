@@ -66,14 +66,26 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
       <section className="mt-8 px-5 sm:px-8">
         <Reveal className="overflow-hidden rounded-[22px]">
           <div className="relative aspect-[16/10] w-full bg-ink-800">
-            <Image
-              src={project.cover}
-              alt={project.name}
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-            />
+            {project.video ? (
+              <video
+                src={project.video}
+                poster={project.cover}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            ) : (
+              <Image
+                src={project.cover}
+                alt={project.name}
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover"
+              />
+            )}
           </div>
         </Reveal>
       </section>
