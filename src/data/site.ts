@@ -20,28 +20,28 @@ export const navLinks = [
 export const services = [
   {
     no: "_001",
-    title: "Branding",
-    desc: "We craft logos and brand systems that leave a lasting impression.",
+    title: "Brand",
+    desc: "Culture-led brand building, positioning, and identity systems that win recognition and command a premium. (Most Creative Visual Identity, 2026. D&AD winners.)",
   },
   {
     no: "_002",
-    title: "Development",
-    desc: "Beautiful and functional websites built with purpose and precision.",
+    title: "Media & Performance",
+    desc: "Planning, buying, and performance measured on returns, not spend. Search, social, programmatic, e-commerce — accountable to the P&L.",
   },
   {
     no: "_003",
-    title: "SEO Optimization",
-    desc: "Get found faster with tailored SEO strategies backed by real data.",
+    title: "Procurement & Effectiveness",
+    desc: "Marketing procurement and media effectiveness that turn every rupee of working spend into provable output. Two decades, a thousand-plus advertisers.",
   },
   {
     no: "_004",
-    title: "Social Media",
-    desc: "We plan, post, and grow your brand across every platform with purpose.",
+    title: "Commerce & Experience",
+    desc: "D2C, marketplace, and digital experience — design systems and journeys built to convert, not just to look good.",
   },
   {
     no: "_005",
-    title: "AI Apps",
-    desc: "Get purpose-built AI applications that combine precision with maximum ROI.",
+    title: "GEO / AEO & AI",
+    desc: "The next search war isn't on Google's page one — it's inside the answer. We build brands to be found, cited, and chosen by AI. Purpose-built AI applications, engineered for ROI.",
   },
 ];
 
