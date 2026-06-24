@@ -21,7 +21,7 @@ export const services = [
   {
     no: "_001",
     title: "Brand",
-    desc: "Culture-led brand building, positioning, and identity systems that win recognition and command a premium. (Most Creative Visual Identity, 2026. D&AD winners.)",
+    desc: "Culture-led brand building, positioning, and identity systems that win recognition and command a premium.",
   },
   {
     no: "_002",
