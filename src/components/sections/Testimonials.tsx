@@ -48,7 +48,7 @@ export function Testimonials() {
           <Reveal>
             <span className="eyebrow">Testimonials</span>
             <h2 className="display mt-6 max-w-md text-4xl font-semibold tracking-tight sm:text-5xl lg:text-[56px] lg:leading-[1.05]">
-              Trusted by brands who aren&rsquo;t afraid to stand out.
+              Trusted by brands who refuse to be ordinary.
             </h2>
           </Reveal>
         </div>

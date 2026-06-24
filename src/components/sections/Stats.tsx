@@ -8,14 +8,14 @@ export function Counter({ value, suffix }: { value: string; suffix: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-20% 0px" });
   const [display, setDisplay] = useState("0");
-  const target = parseInt(value, 10) || 0;
+  const target = parseInt(value.replace(/,/g, ""), 10) || 0;
 
   useEffect(() => {
     if (!inView) return;
     const controls = animate(0, target, {
       duration: 1.6,
       ease: [0.22, 1, 0.36, 1],
-      onUpdate: (v) => setDisplay(Math.round(v).toString()),
+      onUpdate: (v) => setDisplay(Math.round(v).toLocaleString("en-US")),
     });
     return () => controls.stop();
   }, [inView, target]);

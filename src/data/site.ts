@@ -46,9 +46,9 @@ export const services = [
 ];
 
 export const stats = [
-  { value: "3", suffix: "m+", label: "Capital raised by brands we helped out." },
-  { value: "289", suffix: "", label: "Brands launched through our creative process." },
-  { value: "56", suffix: "", label: "Awards recognizing our branding excellence." },
+  { value: "20", suffix: "+", label: "Years turning marketing spend into measured return." },
+  { value: "1,000", suffix: "+", label: "Advertisers whose budgets we’ve made work harder." },
+  { value: "15", suffix: "+", label: "Global and national awards for brand and design craft." },
   { value: "97", suffix: "%", label: "Client satisfaction rate across all delivered work." },
 ];
 
