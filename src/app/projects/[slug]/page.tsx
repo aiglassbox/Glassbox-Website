@@ -33,7 +33,7 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
 
   const meta: { label: string; value: ReactNode }[] = [
     { label: "Year", value: project.year },
-    { label: "Scope", value: project.scope },
+    { label: "Tag", value: project.scope },
     { label: "Timeline", value: project.timeline },
   ];
 

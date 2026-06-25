@@ -46,7 +46,7 @@ export const projects: Project[] = [
     results:
       "The transformation came to life most visibly in the 'Har Wada Mumkin' campaign with Sachin Tendulkar, a platform that gave the refreshed brand its clearest expression yet. 30M+ TVC views, 163M+ pan-India viewers, and a digital phase that generated 36M+ impressions: proof that a brand built for today's consumer doesn't just look different, it performs differently too.",
     year: "2025",
-    scope: "Brand, Motion & Sonic",
+    scope: "Brand Identity Transformation, Digital Optimization, Online & Offline Growth",
     timeline: "16 weeks",
     status: "Live project",
     preview: "#",
