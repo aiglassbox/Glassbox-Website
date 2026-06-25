@@ -10,6 +10,8 @@ export type Project = {
   video?: string;
   // Optional video that replaces the FIRST gallery item on the detail page.
   galleryVideo?: string;
+  // Optional headline metrics rendered as animated counters after the body.
+  metrics?: { value: string; suffix: string; label: string }[];
   gallery: string[];
   tagline: string;
   intro: string;
@@ -30,6 +32,11 @@ export const projects: Project[] = [
     cover: A("proj-insurance-cover.jpg"),
     video: "/videos/ageas.mp4",
     galleryVideo: "/videos/ageas-creative.mp4",
+    metrics: [
+      { value: "30", suffix: "M+", label: "TVC views" },
+      { value: "163", suffix: "M+", label: "Pan-India viewers" },
+      { value: "36", suffix: "M+", label: "Digital impressions" },
+    ],
     gallery: [A("proj-insurance-1.jpg"), A("proj-insurance-2.jpg")],
     tagline: "De-Aged. Re-Energised. Future-Ready.",
     intro:

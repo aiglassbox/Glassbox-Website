@@ -6,6 +6,7 @@ import Link from "next/link";
 import { projects, getProject } from "@/data/projects";
 import { Reveal } from "@/components/ui/Reveal";
 import { GalleryVideo } from "@/components/ui/GalleryVideo";
+import { Counter } from "@/components/sections/Stats";
 import { CtaProject } from "@/components/sections/CtaProject";
 
 export function generateStaticParams() {
@@ -104,6 +105,22 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
             {project.results}
           </p>
         </Reveal>
+
+        {project.metrics && project.metrics.length > 0 && (
+          <Reveal
+            delay={0.1}
+            className="mt-12 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-10 border-t border-white/[0.1] pt-10 sm:mt-14 sm:grid-cols-3 sm:pt-12"
+          >
+            {project.metrics.map((m) => (
+              <div key={m.label} className="flex flex-col gap-2">
+                <span className="display text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+                  <Counter value={m.value} suffix={m.suffix} />
+                </span>
+                <p className="text-[13px] text-muted sm:text-[14px]">{m.label}</p>
+              </div>
+            ))}
+          </Reveal>
+        )}
       </section>
 
       {/* Gallery */}
