@@ -8,6 +8,8 @@ export type Project = {
   // Optional hero video shown on the project detail page instead of the cover
   // image. The works-page thumbnail always uses `cover`.
   video?: string;
+  // Optional video that replaces the FIRST gallery item on the detail page.
+  galleryVideo?: string;
   gallery: string[];
   tagline: string;
   intro: string;
@@ -27,6 +29,7 @@ export const projects: Project[] = [
     card: A("proj-insurance-cover.jpg"),
     cover: A("proj-insurance-cover.jpg"),
     video: "/videos/ageas.mp4",
+    galleryVideo: "/videos/ageas-creative.mp4",
     gallery: [A("proj-insurance-1.jpg"), A("proj-insurance-2.jpg")],
     tagline: "De-Aged. Re-Energised. Future-Ready.",
     intro:

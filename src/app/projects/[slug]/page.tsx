@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { projects, getProject } from "@/data/projects";
 import { Reveal } from "@/components/ui/Reveal";
+import { GalleryVideo } from "@/components/ui/GalleryVideo";
 import { CtaProject } from "@/components/sections/CtaProject";
 
 export function generateStaticParams() {
@@ -114,15 +115,19 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
               delay={i * 0.05}
               className="overflow-hidden rounded-[22px]"
             >
-              <div className="relative aspect-[16/10] w-full bg-ink-800">
-                <Image
-                  src={g}
-                  alt={`${project.name} visual ${i + 1}`}
-                  fill
-                  sizes="100vw"
-                  className="object-cover"
-                />
-              </div>
+              {i === 0 && project.galleryVideo ? (
+                <GalleryVideo src={project.galleryVideo} poster={g} />
+              ) : (
+                <div className="relative aspect-[16/10] w-full bg-ink-800">
+                  <Image
+                    src={g}
+                    alt={`${project.name} visual ${i + 1}`}
+                    fill
+                    sizes="100vw"
+                    className="object-cover"
+                  />
+                </div>
+              )}
             </Reveal>
           ))}
         </div>
