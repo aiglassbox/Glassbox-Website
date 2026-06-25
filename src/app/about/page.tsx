@@ -9,7 +9,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "About - Glassbox",
   description:
-    "Glassbox is a modern creative studio where design, strategy, and storytelling grow together.",
+    "Glassbox is a brand and media agency, a Komerz company, measured on what comes back, not what goes out.",
 };
 
 export default function AboutPage() {
