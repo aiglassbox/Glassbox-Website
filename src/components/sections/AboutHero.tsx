@@ -72,10 +72,9 @@ export function AboutHero() {
           initial={{ opacity: 0, y: 26 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: EASE, delay: 0.15 }}
-          className="display absolute left-6 top-6 max-w-[18ch] text-balance text-2xl font-semibold leading-[1.06] tracking-tight text-white sm:left-10 sm:top-10 sm:text-4xl lg:text-5xl"
+          className="display absolute left-6 top-6 max-w-[13ch] text-balance text-3xl font-semibold leading-[1.05] tracking-tight text-white sm:left-10 sm:top-10 sm:text-4xl lg:text-[52px]"
         >
-          Glassbox build connected brands at the intersection of commerce,
-          creativity, technology, and culture.
+          Connected brands across commerce, creativity, and culture.
         </motion.h1>
 
         {/* Caption top-right */}
@@ -83,13 +82,13 @@ export function AboutHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: EASE, delay: 0.3 }}
-          className="absolute inset-x-5 bottom-20 text-left sm:inset-x-auto sm:bottom-auto sm:right-10 sm:top-11 sm:max-w-[300px] sm:text-right"
+          className="absolute inset-x-5 bottom-20 text-left lg:inset-x-auto lg:bottom-auto lg:right-10 lg:top-11 lg:max-w-[300px] lg:text-right"
         >
           <p className="text-[12px] leading-relaxed text-white/90 sm:text-[15px]">
             Glassbox is a brand and media agency, a Komerz company, measured
             on what comes back, not what goes out.
           </p>
-          <div className="mt-3 flex items-center justify-start gap-3 text-[12px] text-white/80 sm:mt-4 sm:justify-end sm:text-[13px]">
+          <div className="mt-3 flex items-center justify-start gap-3 text-[12px] text-white/80 sm:mt-4 lg:justify-end lg:text-[13px]">
             <a href={social.instagram} className="transition-colors hover:text-white">IG</a>
             <span className="text-white/30">/</span>
             <a href={social.linkedin} className="transition-colors hover:text-white">LI</a>
