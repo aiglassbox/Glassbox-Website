@@ -132,8 +132,8 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
               delay={i * 0.05}
               className="overflow-hidden rounded-[22px]"
             >
-              {i === 0 && project.galleryVideo ? (
-                <GalleryVideo src={project.galleryVideo} poster={g} />
+              {project.galleryVideos?.[i] ? (
+                <GalleryVideo src={project.galleryVideos[i]!} poster={g} />
               ) : (
                 <div className="relative aspect-[16/10] w-full bg-ink-800">
                   <Image

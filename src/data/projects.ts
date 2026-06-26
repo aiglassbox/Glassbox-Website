@@ -8,8 +8,8 @@ export type Project = {
   // Optional hero video shown on the project detail page instead of the cover
   // image. The works-page thumbnail always uses `cover`.
   video?: string;
-  // Optional video that replaces the FIRST gallery item on the detail page.
-  galleryVideo?: string;
+  // Optional videos that replace gallery items by index on the detail page.
+  galleryVideos?: (string | undefined)[];
   // Optional headline metrics rendered as animated counters after the body.
   metrics?: { value: string; suffix: string; label: string }[];
   gallery: string[];
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     card: A("proj-insurance-cover.jpg"),
     cover: A("proj-insurance-cover.jpg"),
     video: "/videos/ageas.mp4",
-    galleryVideo: "/videos/ageas-creative.mp4",
+    galleryVideos: ["/videos/ageas-creative.mp4", "/videos/ageas-ideas.mp4"],
     metrics: [
       { value: "30", suffix: "M+", label: "TVC views" },
       { value: "163", suffix: "M+", label: "Pan-India viewers" },
