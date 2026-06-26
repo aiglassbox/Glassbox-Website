@@ -49,7 +49,7 @@ export const stats = [
   { value: "20", suffix: "+", label: "Years turning marketing spend into measured return." },
   { value: "1,000", suffix: "+", label: "Advertisers whose budgets we’ve made work harder." },
   { value: "15", suffix: "+", label: "Global and national awards for brand and design craft." },
-  { value: "97", suffix: "%", label: "Client satisfaction rate across all delivered work." },
+  { value: "300", suffix: "+", label: "Brands built by our founding team, across 30+ categories." },
 ];
 
 export const testimonials = [
