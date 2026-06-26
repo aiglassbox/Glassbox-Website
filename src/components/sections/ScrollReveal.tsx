@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 
 const TEXT =
-  "We’re Glassbox, a brand and media firm. We build bold brands and run the media behind them, across brand, commerce, and performance, measured on what comes back, not what goes out.";
+  "We’re Glassbox, a brand and media company. We build bold brands and run the media behind them, across brand, commerce, and performance, measured on what comes back, not what goes out.";
 
 function Word({
   children,
