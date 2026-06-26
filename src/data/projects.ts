@@ -66,7 +66,7 @@ export const projects: Project[] = [
     results:
       "The results followed the strategy. Six new listings across major UK grocery and specialty retail chains. Top 5 on Amazon's flavoured coffee category. A 3× improvement in ROAS. Beanies went from a niche favourite coasting on loyalty to a category challenger actively growing its audience, and its shelf presence.",
     year: "2024",
-    scope: "Growth Strategy, D2C",
+    scope: "Social Media Creatives, Brand World, AI Content, Marketing Material",
     timeline: "12 weeks",
     status: "Live project",
     preview: "#",
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     results:
       "The outcome wasn't just a leaner operation, it was a future-proofed marketing architecture built to compound value over time. $36M in USD savings over seven months. A 104% increase in digital audiences reached. A 58% uplift in pan-India search clicks. Numbers that speak to what happens when commercial rigour and creative intelligence work from the same playbook.",
     year: "2025",
-    scope: "Procurement, Martech",
+    scope: "Marketing Spend Transformation, Innovation Workshopping, CX Audit & Strategy, Digital First D2C Thinking, Data Strategy Frameworks, Martech Transformation",
     timeline: "7 months",
     status: "Live project",
     preview: "#",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     results:
       "The media mix was rebuilt from the ground up, integrating influencer ecosystems, social-first content formats, and performance channels that simply hadn't been part of Bata's playbook before. The goal wasn't just to reach a younger audience; it was to earn their attention at the exact moment they were forming their footwear preferences for life. A 30% improvement in CAC was the first signal that the repositioning was landing.",
     year: "2024",
-    scope: "Media Strategy, Influencer",
+    scope: "Partnership Transformation, Ongoing Media Optimisation, Business Transformation",
     timeline: "10 weeks",
     status: "Live project",
     preview: "#",
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     results:
       "The larger ambition goes well beyond cost efficiency. Foo is a brand with genuine cultural cachet, an expanding footprint, and a growth story still being written. The right PR partner, scoped clearly, incentivised correctly, and aligned to business outcomes, won't just amplify that story. They'll help shape it.",
     year: "2025",
-    scope: "PR Consolidation",
+    scope: "Digital Media Planning & Buying, SEO, Programmatic, E-commerce",
     timeline: "Ongoing",
     status: "Live project",
     preview: "#",
