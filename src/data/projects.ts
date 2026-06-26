@@ -31,7 +31,7 @@ export const projects: Project[] = [
     card: A("proj-insurance-cover.jpg"),
     cover: A("proj-insurance-cover.jpg"),
     video: "/videos/ageas.mp4",
-    galleryVideos: ["/videos/ageas-creative.mp4", "/videos/ageas-ideas.mp4"],
+    galleryVideos: ["/videos/ageas-creative.mp4"],
     metrics: [
       { value: "30", suffix: "M+", label: "TVC views" },
       { value: "163", suffix: "M+", label: "Pan-India viewers" },
