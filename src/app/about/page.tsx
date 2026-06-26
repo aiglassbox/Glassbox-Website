@@ -23,7 +23,7 @@ export default function AboutPage() {
           <Reveal className="flex flex-col items-center">
             <IntroGlobe />
             <p className="mt-8 max-w-2xl text-balance text-[19px] font-medium leading-relaxed tracking-tight text-white/90 sm:text-[22px]">
-              We&rsquo;re Glassbox, a brand and media firm. We build bold
+              We&rsquo;re Glassbox, a brand and media company. We build bold
               brands and run the media behind them, across brand, commerce, and
               performance, measured on what comes back, not what goes out.
             </p>
