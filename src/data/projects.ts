@@ -86,7 +86,7 @@ export const projects: Project[] = [
     results:
       "The outcome wasn't just a leaner operation, it was a future-proofed marketing architecture built to compound value over time. $36M in USD savings over seven months. A 104% increase in digital audiences reached. A 58% uplift in pan-India search clicks. Numbers that speak to what happens when commercial rigour and creative intelligence work from the same playbook.",
     year: "2025",
-    scope: "Marketing Spend Transformation, Innovation Workshopping, CX Audit & Strategy, Digital First D2C Thinking, Data Strategy Frameworks, Martech Transformation",
+    scope: "Innovation Workshopping, CX Audit & Strategy, Data Strategy Frameworks, Martech Transformation",
     timeline: "7 months",
     status: "Live project",
     preview: "#",
