@@ -90,7 +90,6 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="mt-10 flex flex-col gap-3 text-[13px] text-muted sm:flex-row sm:items-center sm:justify-between">
         <span>&copy; 2026 Glassbox. All rights reserved.</span>
-        <span>A creative studio based in Mumbai.</span>
       </div>
     </footer>
   );
