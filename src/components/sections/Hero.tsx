@@ -197,7 +197,7 @@ export function Hero() {
           transition={{ duration: 0.9, ease: EASE, delay: 0.7 }}
           className="text-balance text-[19px] font-medium leading-snug tracking-tight text-white sm:text-[22px] lg:text-[26px]"
         >
-          We&rsquo;re Glassbox. We build brands worth choosing.
+          We use brand, experience, procurement and commerce to compound
         </motion.p>
       </div>
 
