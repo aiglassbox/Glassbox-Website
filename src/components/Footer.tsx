@@ -11,9 +11,9 @@ const studioLinks = [
 ];
 
 const companyLinks = [
-  "KOMERZ",
-  "KOMERZ | PATHFORMANCE",
-  "KOMERZ | GREAT WINES DIRECT",
+  { label: "KOMERZ", href: "https://www.komerz.co.uk/" },
+  { label: "KOMERZ | PATHFORMANCE", href: "https://www.pathformance.com/" },
+  { label: "KOMERZ | GREAT WINES DIRECT", href: "https://greatwinesdirect.co.uk/" },
 ];
 
 const socialLinks = [
@@ -53,9 +53,15 @@ export function Footer() {
         <div className="flex flex-col gap-4">
           <p className="eyebrow">Company</p>
           {companyLinks.map((c) => (
-            <span key={c} className="w-fit text-[16px] text-white/90">
-              {c}
-            </span>
+            <a
+              key={c.href}
+              href={c.href}
+              target="_blank"
+              rel="noreferrer"
+              className="w-fit text-[16px] text-white/90 transition-colors hover:text-white"
+            >
+              {c.label}
+            </a>
           ))}
         </div>
 
