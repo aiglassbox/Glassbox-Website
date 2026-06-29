@@ -4,7 +4,15 @@ import { animate, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { stats } from "@/data/site";
 
-export function Counter({ value, suffix }: { value: string; suffix: string }) {
+export function Counter({
+  value,
+  suffix,
+  prefix = "",
+}: {
+  value: string;
+  suffix: string;
+  prefix?: string;
+}) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-20% 0px" });
   const [display, setDisplay] = useState("0");
@@ -22,6 +30,7 @@ export function Counter({ value, suffix }: { value: string; suffix: string }) {
 
   return (
     <span ref={ref}>
+      {prefix}
       {display}
       {suffix}
     </span>

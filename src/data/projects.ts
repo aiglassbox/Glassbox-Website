@@ -11,7 +11,7 @@ export type Project = {
   // Optional videos that replace gallery items by index on the detail page.
   galleryVideos?: (string | undefined)[];
   // Optional headline metrics rendered as animated counters after the body.
-  metrics?: { value: string; suffix: string; label: string }[];
+  metrics?: { value: string; suffix: string; prefix?: string; label: string }[];
   gallery: string[];
   tagline: string;
   intro: string;
@@ -56,6 +56,11 @@ export const projects: Project[] = [
     name: "Beanies",
     card: A("proj-coffee-cover.jpg"),
     cover: A("proj-coffee-cover.jpg"),
+    metrics: [
+      { value: "6", suffix: "+", label: "Listings in major UK grocery and specialty retail chains." },
+      { value: "5", suffix: "", prefix: "Top ", label: "Within Amazon’s Flavoured Coffee category." },
+      { value: "3", suffix: "x", label: "Improvement in ROAS." },
+    ],
     gallery: [A("proj-coffee-1.jpg"), A("proj-coffee-2.jpg")],
     tagline:
       "Sharpened a beloved coffee brand to punch harder, speak louder, and move smarter in the competitive UK coffee aisle.",
@@ -76,6 +81,11 @@ export const projects: Project[] = [
     name: "TATA EV",
     card: A("proj-ev-cover.jpg"),
     cover: A("proj-ev-cover.jpg"),
+    metrics: [
+      { value: "36", suffix: "M", prefix: "$", label: "USD savings delivered over a 7-month engagement." },
+      { value: "104", suffix: "%", label: "Increase in potential audiences reached on digital." },
+      { value: "58", suffix: "%", label: "Increase in search clicks at a pan-India level." },
+    ],
     gallery: [A("proj-ev-1.jpg"), A("proj-ev-2.jpg")],
     tagline:
       "Unlocked $30M in procurement efficiencies while redefining the marketing playbook for a leading EV player.",
@@ -96,6 +106,9 @@ export const projects: Project[] = [
     name: "Bata",
     card: A("proj-footwear-cover.jpg"),
     cover: A("proj-footwear-cover.jpg"),
+    metrics: [
+      { value: "30", suffix: "%", label: "Cost improvement in CAC." },
+    ],
     gallery: [A("proj-footwear-1.jpg"), A("proj-footwear-2.jpg")],
     tagline: "Transformed the media strategy for India's favourite footwear brand.",
     intro:
@@ -115,6 +128,10 @@ export const projects: Project[] = [
     name: "FOO",
     card: A("proj-restaurant-cover.jpg"),
     cover: A("proj-restaurant-cover.jpg"),
+    metrics: [
+      { value: "600", suffix: "%", label: "Increase in organic traffic through targeted paid campaigns." },
+      { value: "10", suffix: "%", label: "Month-on-month increase in footfalls." },
+    ],
     gallery: [A("proj-restaurant-1.jpg"), A("proj-restaurant-2.jpg")],
     tagline:
       "Consolidating five fragmented agency relationships into one accountable, performance-linked partnership with a unified national narrative.",

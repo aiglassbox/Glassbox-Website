@@ -114,7 +114,7 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
             {project.metrics.map((m) => (
               <div key={m.label} className="flex flex-col gap-2">
                 <span className="display text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-                  <Counter value={m.value} suffix={m.suffix} />
+                  <Counter value={m.value} suffix={m.suffix} prefix={m.prefix} />
                 </span>
                 <p className="text-[13px] text-muted sm:text-[14px]">{m.label}</p>
               </div>
