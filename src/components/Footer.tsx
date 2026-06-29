@@ -82,7 +82,7 @@ export function Footer() {
           <p className="eyebrow mb-2">Newsletter</p>
           <NewsletterForm />
           <p className="mt-4 max-w-[220px] text-[14px] leading-relaxed text-muted">
-            Occasional updates from the studio. No spam.
+            Occasional updates. No spam.
           </p>
         </div>
       </div>
