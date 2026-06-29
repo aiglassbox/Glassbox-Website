@@ -190,14 +190,15 @@ export function Hero() {
       </div>
 
       {/* Tagline, pinned just above the scroll cue */}
-      <div className="absolute bottom-[92px] left-1/2 z-10 w-full max-w-md -translate-x-1/2 px-4 text-center sm:bottom-28">
+      <div className="absolute bottom-[92px] left-1/2 z-10 w-full max-w-lg -translate-x-1/2 px-4 text-center sm:bottom-28">
         <motion.p
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: EASE, delay: 0.7 }}
-          className="text-balance text-[19px] font-medium leading-snug tracking-tight text-white sm:text-[22px] lg:text-[26px]"
+          className="text-balance text-[15px] font-medium leading-snug tracking-tight text-white sm:text-[17px] lg:text-[19px]"
         >
-          We use brand, experience, procurement and commerce to compound
+          We create connected brands at the intersection of commerce,
+          creativity, technology, and culture.
         </motion.p>
       </div>
 
