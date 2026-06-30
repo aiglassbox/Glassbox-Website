@@ -10,6 +10,8 @@ export type Project = {
   video?: string;
   // Optional videos that replace gallery items by index on the detail page.
   galleryVideos?: (string | undefined)[];
+  // Optional short captions shown beneath each gallery item (by index).
+  galleryCaptions?: (string | undefined)[];
   // Optional headline metrics rendered as animated counters after the body.
   metrics?: { value: string; suffix: string; prefix?: string; label: string }[];
   gallery: string[];
@@ -38,6 +40,10 @@ export const projects: Project[] = [
       { value: "36", suffix: "M+", label: "Digital impressions" },
     ],
     gallery: [A("proj-insurance-1.jpg"), A("proj-insurance-2.jpg")],
+    galleryCaptions: [
+      "The ‘Har Wada Mumkin’ platform — TVC and metro takeover with Sachin Tendulkar.",
+      "Strategy, reframed as play — the team behind the relaunch.",
+    ],
     tagline: "De-Aged. Re-Energised. Future-Ready.",
     intro:
       "Transforming a legacy insurer into a brand built for the modern Indian consumer, without losing the credibility it spent decades earning.",
