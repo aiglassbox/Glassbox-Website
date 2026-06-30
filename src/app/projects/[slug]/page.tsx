@@ -83,7 +83,9 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
             <p className="eyebrow mb-6">Overview</p>
             <h2 className="display text-3xl font-semibold leading-[1.04] sm:text-4xl lg:text-[46px]">
               {lead ? <span className="text-white">{lead} </span> : null}
-              <span className={lead ? "text-muted" : "text-white"}>{tail}</span>
+              <span className={lead ? "block text-muted" : "text-white"}>
+                {tail}
+              </span>
             </h2>
           </Reveal>
           <Reveal duration={0.6} delay={0.08} className="lg:col-span-5">
