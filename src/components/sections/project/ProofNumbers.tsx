@@ -20,7 +20,7 @@ export function ProofNumbers({ metrics }: { metrics: Metric[] }) {
         : "lg:grid-cols-3";
 
   return (
-    <section className="container-x py-24 sm:py-32">
+    <section className="container-x pb-24 sm:pb-32">
       <Reveal duration={0.6}>
         <p className="eyebrow mb-10 text-center sm:mb-14">By the numbers</p>
       </Reveal>
