@@ -58,27 +58,25 @@ export const projects: Project[] = [
     preview: "#",
   },
   {
-    slug: "uk-coffee",
-    name: "Beanies",
-    card: A("proj-coffee-cover.jpg"),
-    cover: A("proj-coffee-cover.jpg"),
-    metrics: [
-      { value: "6", suffix: "+", label: "Listings in major UK grocery and specialty retail chains." },
-      { value: "5", suffix: "", prefix: "Top ", label: "Within Amazon’s Flavoured Coffee category." },
-      { value: "3", suffix: "x", label: "Improvement in ROAS." },
+    slug: "tom-benz",
+    name: "Tom Benz",
+    card: A("proj-tombenz-cover.jpg"),
+    cover: A("proj-tombenz-cover.jpg"),
+    gallery: [A("proj-tombenz-1.jpg"), A("proj-tombenz-2.jpg")],
+    galleryCaptions: [
+      "The brand world in the wild: HORECA, retail, merchandise and home delivery.",
+      "Anchored in the essence of the wine, from vineyard to table.",
     ],
-    gallery: [A("proj-coffee-1.jpg"), A("proj-coffee-2.jpg")],
-    tagline:
-      "Sharpened a beloved coffee brand to punch harder, speak louder, and move smarter in the competitive UK coffee aisle.",
+    tagline: "Bottled for the free-spirited.",
     intro:
-      "Redefining growth strategy for a niche UK flavoured coffee brand with 50+ varieties and a plateau problem.",
+      "Taking Tom Benz from a boutique wine to a lifestyle-driven brand ready to scale across the UK market.",
     body:
-      "In a cluttered UK coffee market, Beanies, known for its 50+ flavoured varieties, had hit a plateau. Its vibrant product world wasn't translating into consumer excitement, and its positioning lacked the sharpness needed to drive trial or loyalty. We redefined Beanies' growth story by building a refreshed, dual-messaging strategy rooted in research-led TOFU and BOFU D2C frameworks. Layered with an AI-powered creative engine, we delivered motion-first, performance-led assets designed to scale across markets, infusing the brand with distinctive tonality, agile operations, and global adaptability.",
+      "Tom Benz was ready to move beyond being a boutique wine with a loyal following and step into the UK market as a lifestyle-driven brand with a strong point of view. The ambition was to craft a brand playbook that could guide this expansion, preserving the brand's quiet confidence and European charm while building relevance with a new, discerning audience. We defined Tom Benz's narrative, tone of voice, identity usage, and an ecosystem of brand experiences that extend far beyond the label, building a cohesive brand world that flexes across retail, digital, and cultural spaces.",
     results:
-      "The results followed the strategy. Six new listings across major UK grocery and specialty retail chains. Top 5 on Amazon's flavoured coffee category. A 3× improvement in ROAS. Beanies went from a niche favourite coasting on loyalty to a category challenger actively growing its audience, and its shelf presence.",
-    year: "2024",
-    scope: "Social Media Creatives, Brand World, AI Content, Marketing Material",
-    timeline: "12 weeks",
+      "We took Tom Benz from a two-dimensional label to a rich, multi-layered brand universe built for scale and storytelling. Anchored in the essence of the wine, we developed a storyline that captures its quiet confidence, German heritage, and modern spirit. That narrative became the foundation for a brand book defining everything from tone of voice to visual identity, and a rollout toolkit that made the brand market-ready across retail, wholesale, HORECA and communications. What began as a label became a living brand world, ready to speak, flex, and grow wherever it goes.",
+    year: "2025",
+    scope: "Brand Voice & Messaging, Brand Identity Design, Brand Evolution & Stewardship, Personality Definition, Brand Playbook",
+    timeline: "Ongoing",
     status: "Live project",
     preview: "#",
   },
