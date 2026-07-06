@@ -75,8 +75,8 @@ export const projects: Project[] = [
     results:
       "We took Tom Benz from a two-dimensional label to a rich, multi-layered brand universe built for scale and storytelling. Anchored in the essence of the wine, we developed a storyline that captures its quiet confidence, German heritage, and modern spirit. That narrative became the foundation for a brand book defining everything from tone of voice to visual identity, and a rollout toolkit that made the brand market-ready across retail, wholesale, HORECA and communications. What began as a label became a living brand world, ready to speak, flex, and grow wherever it goes.",
     year: "2025",
-    scope: "Brand Voice & Messaging, Brand Identity Design, Brand Evolution & Stewardship, Personality Definition, Brand Playbook",
-    timeline: "Ongoing",
+    scope: "Brand Identity Design, Brand Voice & Messaging, Brand Evolution & Stewardship, Personality Definition, Brand Playbook",
+    timeline: "4 weeks",
     status: "Live project",
     preview: "#",
   },
