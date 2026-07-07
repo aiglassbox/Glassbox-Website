@@ -39,15 +39,14 @@ export function ContactForm() {
                 {avatars.map((a) => (
                   <span
                     key={a.name}
-                    className="relative h-8 w-8 overflow-hidden rounded-lg"
+                    title={a.name}
+                    className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/[0.08] text-[11px] font-medium text-white/80"
                   >
-                    <Image
-                      src={a.img}
-                      alt={a.name}
-                      fill
-                      sizes="32px"
-                      className="object-cover object-top"
-                    />
+                    {a.name
+                      .split(" ")
+                      .map((w) => w[0])
+                      .slice(0, 2)
+                      .join("")}
                   </span>
                 ))}
               </div>
