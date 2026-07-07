@@ -38,7 +38,7 @@ export function IntroGlobe() {
         </defs>
         <text fill="currentColor" style={{ fontSize: "8px", letterSpacing: "2px", fontFamily: "var(--font-chivo), monospace" }}>
           <textPath href="#globe-ring" startOffset="0">
-            GLASSBOX • 140 COUNTRIES • GLASSBOX • 140 COUNTRIES •
+            GLASSBOX • KOMERZ • 140 COUNTRIES • GLASSBOX • KOMERZ •
           </textPath>
         </text>
       </motion.svg>

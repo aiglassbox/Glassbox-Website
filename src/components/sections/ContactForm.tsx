@@ -18,7 +18,7 @@ export function ContactForm() {
         <Reveal>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[20px] bg-ink-800 lg:aspect-auto lg:h-full lg:min-h-[620px]">
             <Image
-              src={A("gcCOK3eBfHG7P5Zcxtv9TwUq5A.jpg")}
+              src={A("contact-visual.jpg")}
               alt=""
               fill
               sizes="(max-width:1024px) 100vw, 50vw"
