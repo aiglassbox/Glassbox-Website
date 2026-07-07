@@ -139,7 +139,7 @@ export const projects: Project[] = [
     gallery: [A("proj-foo-2.jpg"), A("proj-foo-1.jpg")],
     galleryVideos: ["/videos/foo.mp4", undefined],
     galleryCaptions: [
-      "FOO, in motion. The campaign film.",
+      "Mapped a digital-first touchpoint strategy spanning Search, Social, Performance Marketing, and E-commerce for a leading Pan-India restaurant brand.",
       "The FOO brand world, from ramen to fresh brew.",
     ],
     tagline:
