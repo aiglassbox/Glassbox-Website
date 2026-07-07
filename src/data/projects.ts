@@ -140,7 +140,7 @@ export const projects: Project[] = [
     galleryVideos: ["/videos/foo.mp4", undefined],
     galleryCaptions: [
       "Mapped a digital-first touchpoint strategy spanning Search, Social, Performance Marketing, and E-commerce for a leading Pan-India restaurant brand.",
-      "The FOO brand world, from ramen to fresh brew.",
+      undefined,
     ],
     tagline:
       "Consolidating five fragmented agency relationships into one accountable, performance-linked partnership with a unified national narrative.",
