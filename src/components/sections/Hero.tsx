@@ -197,8 +197,7 @@ export function Hero() {
           transition={{ duration: 0.9, ease: EASE, delay: 0.7 }}
           className="text-balance text-[15px] font-medium leading-snug tracking-tight text-white sm:text-[17px] lg:text-[19px]"
         >
-          We create connected brands at the intersection of commerce,
-          creativity, technology, and culture.
+          Creativity. Culture. Commerce. Innovation.
         </motion.p>
       </div>
 
