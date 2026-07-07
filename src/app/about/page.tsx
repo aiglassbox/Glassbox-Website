@@ -77,7 +77,7 @@ export default function AboutPage() {
                     <span className="font-mono text-[13px] tabular-nums text-muted transition-colors duration-300 group-hover:text-accent">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <h3 className="display text-2xl font-semibold leading-[1.05] tracking-tight text-white transition-[transform,color] duration-500 ease-out group-hover:translate-x-2 group-hover:bg-gradient-to-r group-hover:from-accent group-hover:via-pink group-hover:to-mint group-hover:bg-clip-text group-hover:text-transparent sm:text-[32px] lg:text-[44px]">
+                    <h3 className="display text-2xl font-semibold leading-[1.05] tracking-tight text-white/75 transition-[transform,color] duration-300 ease-out group-hover:translate-x-2 group-hover:text-white sm:text-[32px] lg:text-[44px]">
                       {m.name}
                     </h3>
                   </div>
