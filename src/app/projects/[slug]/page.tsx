@@ -40,7 +40,7 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
   const meta = [
     { label: "Year", value: project.year, tabular: true },
     { label: "Tag", value: project.scope, tabular: false },
-    { label: "Timeline", value: project.timeline, tabular: true },
+    { label: "Industry", value: project.industry, tabular: false },
   ];
 
   return (

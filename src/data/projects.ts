@@ -21,7 +21,7 @@ export type Project = {
   results: string;
   year: string;
   scope: string;
-  timeline: string;
+  industry: string;
   status: string;
   preview: string;
 };
@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "The transformation came to life most visibly in the 'Har Wada Mumkin' campaign with Sachin Tendulkar, a platform that gave the refreshed brand its clearest expression yet. 30M+ TVC views, 163M+ pan-India viewers, and a digital phase that generated 36M+ impressions: proof that a brand built for today's consumer doesn't just look different, it performs differently too.",
     year: "2025",
     scope: "Brand Identity Transformation, Digital Optimization, Online & Offline Growth",
-    timeline: "16 weeks",
+    industry: "Life Insurance",
     status: "Live project",
     preview: "#",
   },
@@ -76,7 +76,7 @@ export const projects: Project[] = [
       "We took Tom Benz from a two-dimensional label to a rich, multi-layered brand universe built for scale and storytelling. Anchored in the essence of the wine, we developed a storyline that captures its quiet confidence, German heritage, and modern spirit. That narrative became the foundation for a brand book defining everything from tone of voice to visual identity, and a rollout toolkit that made the brand market-ready across retail, wholesale, HORECA and communications. What began as a label became a living brand world, ready to speak, flex, and grow wherever it goes.",
     year: "2025",
     scope: "Brand Identity Design, Brand Voice & Messaging, Brand Evolution & Stewardship, Personality Definition, Brand Playbook",
-    timeline: "4 weeks",
+    industry: "Wine & Spirits",
     status: "Live project",
     preview: "#",
   },
@@ -101,7 +101,7 @@ export const projects: Project[] = [
       "The outcome wasn't just a leaner operation, it was a future-proofed marketing architecture built to compound value over time. $36M in USD savings over seven months. A 104% increase in digital audiences reached. A 58% uplift in pan-India search clicks. Numbers that speak to what happens when commercial rigour and creative intelligence work from the same playbook.",
     year: "2025",
     scope: "Innovation Workshopping, CX Audit & Strategy, Data Strategy Frameworks, Martech Transformation",
-    timeline: "7 months",
+    industry: "Electric Vehicles",
     status: "Live project",
     preview: "#",
   },
@@ -123,20 +123,22 @@ export const projects: Project[] = [
       "The media mix was rebuilt from the ground up, integrating influencer ecosystems, social-first content formats, and performance channels that simply hadn't been part of Bata's playbook before. The goal wasn't just to reach a younger audience; it was to earn their attention at the exact moment they were forming their footwear preferences for life. A 30% improvement in CAC was the first signal that the repositioning was landing.",
     year: "2024",
     scope: "Partnership Transformation, Ongoing Media Optimisation, Business Transformation",
-    timeline: "10 weeks",
+    industry: "Footwear",
     status: "Live project",
     preview: "#",
   },
   {
     slug: "pan-asian-restaurant",
     name: "FOO",
-    card: A("proj-restaurant-cover.jpg"),
-    cover: A("proj-restaurant-cover.jpg"),
+    card: A("proj-foo-cover.jpg"),
+    cover: A("proj-foo-cover.jpg"),
+    video: "/videos/foo.mp4",
     metrics: [
       { value: "600", suffix: "%", label: "Increase in organic traffic through targeted paid campaigns." },
       { value: "10", suffix: "%", label: "Month-on-month increase in footfalls." },
     ],
-    gallery: [A("proj-restaurant-1.jpg"), A("proj-restaurant-2.jpg")],
+    gallery: [A("proj-foo-1.jpg")],
+    galleryCaptions: ["The FOO brand world, from ramen to fresh brew."],
     tagline:
       "Consolidating five fragmented agency relationships into one accountable, performance-linked partnership with a unified national narrative.",
     intro: "Resetting the PR story for India's leading pan-Asian restaurant.",
@@ -146,7 +148,7 @@ export const projects: Project[] = [
       "The larger ambition goes well beyond cost efficiency. Foo is a brand with genuine cultural cachet, an expanding footprint, and a growth story still being written. The right PR partner, scoped clearly, incentivised correctly, and aligned to business outcomes, won't just amplify that story. They'll help shape it.",
     year: "2025",
     scope: "Digital Media Planning & Buying, SEO, Programmatic, E-commerce",
-    timeline: "Ongoing",
+    industry: "Food & Beverage",
     status: "Live project",
     preview: "#",
   },
