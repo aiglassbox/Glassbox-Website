@@ -61,7 +61,7 @@ export default function AboutPage() {
           <RevealGroup className="border-t border-white/[0.09]" stagger={0.07}>
             {team.map((m, i) => (
               <RevealItem key={m.name}>
-                <div className="group relative flex flex-col gap-2.5 overflow-hidden border-b border-white/[0.09] py-8 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:py-11">
+                <div className="group relative flex flex-col gap-2 overflow-hidden border-b border-white/[0.09] py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:py-7">
                   {/* Hover glow */}
                   <div
                     aria-hidden
@@ -77,7 +77,7 @@ export default function AboutPage() {
                     <span className="font-mono text-[13px] tabular-nums text-muted transition-colors duration-300 group-hover:text-accent">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <h3 className="display text-[34px] font-semibold leading-[0.98] tracking-tight text-white transition-[transform,color] duration-500 ease-out group-hover:translate-x-2 group-hover:bg-gradient-to-r group-hover:from-accent group-hover:via-pink group-hover:to-mint group-hover:bg-clip-text group-hover:text-transparent sm:text-6xl lg:text-[76px]">
+                    <h3 className="display text-2xl font-semibold leading-[1.05] tracking-tight text-white transition-[transform,color] duration-500 ease-out group-hover:translate-x-2 group-hover:bg-gradient-to-r group-hover:from-accent group-hover:via-pink group-hover:to-mint group-hover:bg-clip-text group-hover:text-transparent sm:text-[32px] lg:text-[44px]">
                       {m.name}
                     </h3>
                   </div>
