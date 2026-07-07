@@ -58,21 +58,42 @@ export default function AboutPage() {
             </h2>
           </Reveal>
 
-          <RevealGroup className="border-t border-white/[0.1]" stagger={0.06}>
+          <RevealGroup className="border-t border-white/[0.09]" stagger={0.07}>
             {team.map((m, i) => (
               <RevealItem key={m.name}>
-                <div className="group flex flex-col gap-1.5 border-b border-white/[0.1] py-6 transition-colors duration-300 hover:bg-white/[0.02] sm:flex-row sm:items-baseline sm:justify-between sm:gap-8 sm:py-8">
-                  <div className="flex items-baseline gap-4 sm:gap-8">
-                    <span className="font-mono text-[12px] leading-none text-muted transition-colors duration-300 group-hover:text-accent">
+                <div className="group relative flex flex-col gap-2.5 overflow-hidden border-b border-white/[0.09] py-8 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:py-11">
+                  {/* Hover glow */}
+                  <div
+                    aria-hidden
+                    className="pointer-events-none absolute -left-16 top-1/2 h-48 w-2/3 -translate-y-1/2 rounded-full opacity-0 blur-[80px] transition-opacity duration-500 group-hover:opacity-100"
+                    style={{
+                      background:
+                        "radial-gradient(60% 60% at 30% 50%, rgba(0,153,255,0.4), rgba(255,94,219,0.25) 52%, transparent 80%)",
+                    }}
+                  />
+
+                  {/* Index + name */}
+                  <div className="relative flex items-baseline gap-4 sm:gap-9">
+                    <span className="font-mono text-[13px] tabular-nums text-muted transition-colors duration-300 group-hover:text-accent">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <h3 className="display text-[28px] font-semibold leading-[1.02] tracking-tight text-white transition-transform duration-300 ease-out group-hover:translate-x-1.5 sm:text-4xl lg:text-[52px]">
+                    <h3 className="display text-[34px] font-semibold leading-[0.98] tracking-tight text-white transition-[transform,color] duration-500 ease-out group-hover:translate-x-2 group-hover:bg-gradient-to-r group-hover:from-accent group-hover:via-pink group-hover:to-mint group-hover:bg-clip-text group-hover:text-transparent sm:text-6xl lg:text-[76px]">
                       {m.name}
                     </h3>
                   </div>
-                  <p className="pl-8 text-[13px] leading-relaxed text-muted sm:pl-0 sm:text-right sm:text-[14px]">
-                    {m.role}
-                  </p>
+
+                  {/* Role + arrow */}
+                  <div className="relative flex items-center gap-4 pl-9 sm:justify-end sm:pl-0">
+                    <p className="text-[13px] text-muted transition-colors duration-300 group-hover:text-white sm:max-w-[240px] sm:text-right sm:text-[14px]">
+                      {m.role}
+                    </p>
+                    <span
+                      aria-hidden
+                      className="hidden text-[20px] leading-none text-muted opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:text-accent group-hover:opacity-100 sm:inline-block sm:-translate-x-2"
+                    >
+                      &#8599;
+                    </span>
+                  </div>
                 </div>
               </RevealItem>
             ))}
