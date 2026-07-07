@@ -32,13 +32,6 @@ function StackCard({
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/35" />
 
-        {/* Centered name */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-4xl font-medium tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.5)] sm:text-6xl">
-            {project.name}
-          </span>
-        </div>
-
         {/* Index marker */}
         <div className="absolute left-6 top-6 font-mono text-[13px] text-white/70">
           _{String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}

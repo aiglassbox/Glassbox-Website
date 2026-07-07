@@ -28,6 +28,57 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "tom-benz",
+    name: "Tom Benz",
+    card: A("proj-tombenz-cover.jpg"),
+    cover: A("proj-tombenz-cover.jpg"),
+    gallery: [A("proj-tombenz-1.jpg"), A("proj-tombenz-2.jpg")],
+    galleryCaptions: [
+      "The brand world in the wild: HORECA, retail, merchandise and home delivery.",
+      "Anchored in the essence of the wine, from vineyard to table.",
+    ],
+    tagline: "Bottled for the free-spirited.",
+    intro:
+      "Taking Tom Benz from a boutique wine to a lifestyle-driven brand ready to scale across the UK market.",
+    body:
+      "Tom Benz was ready to move beyond being a boutique wine with a loyal following and step into the UK market as a lifestyle-driven brand with a strong point of view. The ambition was to craft a brand playbook that could guide this expansion, preserving the brand's quiet confidence and European charm while building relevance with a new, discerning audience. We defined Tom Benz's narrative, tone of voice, identity usage, and an ecosystem of brand experiences that extend far beyond the label, building a cohesive brand world that flexes across retail, digital, and cultural spaces.",
+    results:
+      "We took Tom Benz from a two-dimensional label to a rich, multi-layered brand universe built for scale and storytelling. Anchored in the essence of the wine, we developed a storyline that captures its quiet confidence, German heritage, and modern spirit. That narrative became the foundation for a brand book defining everything from tone of voice to visual identity, and a rollout toolkit that made the brand market-ready across retail, wholesale, HORECA and communications. What began as a label became a living brand world, ready to speak, flex, and grow wherever it goes.",
+    year: "2025",
+    scope: "Brand Identity Design, Brand Voice & Messaging, Brand Evolution & Stewardship, Personality Definition, Brand Playbook",
+    industry: "Alcoholic Beverages",
+    status: "Live project",
+    preview: "#",
+  },
+  {
+    slug: "pan-asian-restaurant",
+    name: "FOO",
+    card: A("proj-foo-cover.jpg"),
+    cover: A("proj-foo-cover.jpg"),
+    metrics: [
+      { value: "600", suffix: "%", label: "Increase in organic traffic through targeted paid campaigns." },
+      { value: "10", suffix: "%", label: "Month-on-month increase in footfalls." },
+    ],
+    gallery: [A("proj-foo-2.jpg"), A("proj-foo-1.jpg")],
+    galleryVideos: ["/videos/foo.mp4", undefined],
+    galleryCaptions: [
+      "Mapped a digital-first touchpoint strategy spanning Search, Social, Performance Marketing, and E-commerce for a leading Pan-India restaurant brand.",
+      undefined,
+    ],
+    tagline:
+      "Consolidating five fragmented agency relationships into one accountable, performance-linked partnership with a unified national narrative.",
+    intro: "Resetting the PR story for India's leading pan-Asian restaurant.",
+    body:
+      "Foo's PR was scattered across 5 micro-market agencies, speaking fragmented stories, overlapping fees, no single owner. With the restaurant growing at scale across different markets, we are managing an India-fit pitch to appoint one accountable partner for Foo, resetting scopes, rates, and wiring in pay-for-performance. The outcome: a unified national narrative with local agility and a cleaner, leaner PR spend.",
+    results:
+      "The larger ambition goes well beyond cost efficiency. Foo is a brand with genuine cultural cachet, an expanding footprint, and a growth story still being written. The right PR partner, scoped clearly, incentivised correctly, and aligned to business outcomes, won't just amplify that story. They'll help shape it.",
+    year: "2025",
+    scope: "Digital Media Planning & Buying, SEO, Programmatic, E-commerce",
+    industry: "Food & Beverage",
+    status: "Live project",
+    preview: "#",
+  },
+  {
     slug: "insurance",
     name: "Ageas Federal",
     card: A("proj-insurance-cover.jpg"),
@@ -54,29 +105,6 @@ export const projects: Project[] = [
     year: "2025",
     scope: "Brand Identity Transformation, Digital Optimization, Online & Offline Growth",
     industry: "Insurance",
-    status: "Live project",
-    preview: "#",
-  },
-  {
-    slug: "tom-benz",
-    name: "Tom Benz",
-    card: A("proj-tombenz-cover.jpg"),
-    cover: A("proj-tombenz-cover.jpg"),
-    gallery: [A("proj-tombenz-1.jpg"), A("proj-tombenz-2.jpg")],
-    galleryCaptions: [
-      "The brand world in the wild: HORECA, retail, merchandise and home delivery.",
-      "Anchored in the essence of the wine, from vineyard to table.",
-    ],
-    tagline: "Bottled for the free-spirited.",
-    intro:
-      "Taking Tom Benz from a boutique wine to a lifestyle-driven brand ready to scale across the UK market.",
-    body:
-      "Tom Benz was ready to move beyond being a boutique wine with a loyal following and step into the UK market as a lifestyle-driven brand with a strong point of view. The ambition was to craft a brand playbook that could guide this expansion, preserving the brand's quiet confidence and European charm while building relevance with a new, discerning audience. We defined Tom Benz's narrative, tone of voice, identity usage, and an ecosystem of brand experiences that extend far beyond the label, building a cohesive brand world that flexes across retail, digital, and cultural spaces.",
-    results:
-      "We took Tom Benz from a two-dimensional label to a rich, multi-layered brand universe built for scale and storytelling. Anchored in the essence of the wine, we developed a storyline that captures its quiet confidence, German heritage, and modern spirit. That narrative became the foundation for a brand book defining everything from tone of voice to visual identity, and a rollout toolkit that made the brand market-ready across retail, wholesale, HORECA and communications. What began as a label became a living brand world, ready to speak, flex, and grow wherever it goes.",
-    year: "2025",
-    scope: "Brand Identity Design, Brand Voice & Messaging, Brand Evolution & Stewardship, Personality Definition, Brand Playbook",
-    industry: "Alcoholic Beverages",
     status: "Live project",
     preview: "#",
   },
@@ -124,34 +152,6 @@ export const projects: Project[] = [
     year: "2024",
     scope: "Partnership Transformation, Ongoing Media Optimisation, Business Transformation",
     industry: "Lifestyle",
-    status: "Live project",
-    preview: "#",
-  },
-  {
-    slug: "pan-asian-restaurant",
-    name: "FOO",
-    card: A("proj-foo-cover.jpg"),
-    cover: A("proj-foo-cover.jpg"),
-    metrics: [
-      { value: "600", suffix: "%", label: "Increase in organic traffic through targeted paid campaigns." },
-      { value: "10", suffix: "%", label: "Month-on-month increase in footfalls." },
-    ],
-    gallery: [A("proj-foo-2.jpg"), A("proj-foo-1.jpg")],
-    galleryVideos: ["/videos/foo.mp4", undefined],
-    galleryCaptions: [
-      "Mapped a digital-first touchpoint strategy spanning Search, Social, Performance Marketing, and E-commerce for a leading Pan-India restaurant brand.",
-      undefined,
-    ],
-    tagline:
-      "Consolidating five fragmented agency relationships into one accountable, performance-linked partnership with a unified national narrative.",
-    intro: "Resetting the PR story for India's leading pan-Asian restaurant.",
-    body:
-      "Foo's PR was scattered across 5 micro-market agencies, speaking fragmented stories, overlapping fees, no single owner. With the restaurant growing at scale across different markets, we are managing an India-fit pitch to appoint one accountable partner for Foo, resetting scopes, rates, and wiring in pay-for-performance. The outcome: a unified national narrative with local agility and a cleaner, leaner PR spend.",
-    results:
-      "The larger ambition goes well beyond cost efficiency. Foo is a brand with genuine cultural cachet, an expanding footprint, and a growth story still being written. The right PR partner, scoped clearly, incentivised correctly, and aligned to business outcomes, won't just amplify that story. They'll help shape it.",
-    year: "2025",
-    scope: "Digital Media Planning & Buying, SEO, Programmatic, E-commerce",
-    industry: "Food & Beverage",
     status: "Live project",
     preview: "#",
   },

@@ -56,13 +56,6 @@ export function ProjectsList() {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/35" />
 
-              {/* Centered name */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-4xl font-medium tracking-tight text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.55)] sm:text-6xl">
-                  {p.name}
-                </span>
-              </div>
-
               {/* Corner meta */}
               <div className="absolute right-6 top-6 flex items-center justify-end gap-3 text-[13px] text-white/75">
                 <span className="font-mono">{p.year}</span>
