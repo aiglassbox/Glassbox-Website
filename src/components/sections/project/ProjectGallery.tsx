@@ -30,9 +30,7 @@ export function ProjectGallery({
           <figure>
             <div
               className={`relative w-full overflow-hidden bg-ink-800 ${
-                fullBleed
-                  ? "aspect-[16/10] sm:aspect-[21/9]"
-                  : "aspect-[16/10] rounded-[22px]"
+                fullBleed ? "aspect-[16/9]" : "aspect-[16/9] rounded-[22px]"
               }`}
             >
               {video ? (
