@@ -108,12 +108,11 @@ export const faqs = [
 ];
 
 export const team = [
-  { name: "Geetanjali Bhattacharji", role: "Founder and Consulting Director", img: A("team-geetanjali.jpg") },
-  { name: "Anil Nair", role: "Founder and Chief Strategist", img: A("team-anil.jpg") },
-  { name: "Ramesh Krishamurthy", role: "Chief Executive Officer, Komerz", img: A("team-ramesh.jpg") },
-  { name: "Siddharth Shankar", role: "Chief Operating Officer", img: A("team-sid.jpg") },
-  { name: "Michelle Whelan", role: "Global Chief Business Officer", img: A("team-michelle.jpg") },
-  { name: "Frodo Baggins", role: "NGO", img: A("j1bAxPZv9KXkSAWes0FMzAgWh50.jpg") },
+  { name: "Geetanjali Bhattacharji", role: "Founder & Consulting Director" },
+  { name: "Anil Nair", role: "Founder & Chief Strategist" },
+  { name: "Ramesh Krishamurthy", role: "Chief Executive Officer, Komerz" },
+  { name: "Siddharth Shankar", role: "Chief Operating Officer" },
+  { name: "Michelle Whelan", role: "Global Chief Business Officer" },
 ];
 
 export const awards = [

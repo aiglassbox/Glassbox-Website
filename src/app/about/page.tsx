@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { team, awards, stats } from "@/data/site";
 import { AboutHero } from "@/components/sections/AboutHero";
 import { IntroGlobe } from "@/components/sections/IntroGlobe";
@@ -59,28 +58,21 @@ export default function AboutPage() {
             </h2>
           </Reveal>
 
-          <RevealGroup
-            className="grid grid-cols-1 gap-x-5 gap-y-10 sm:grid-cols-2"
-            stagger={0.08}
-          >
-            {team.map((m) => (
+          <RevealGroup className="border-t border-white/[0.1]" stagger={0.06}>
+            {team.map((m, i) => (
               <RevealItem key={m.name}>
-                <div className="group">
-                  <div className="relative aspect-[4/5] overflow-hidden rounded-[18px] bg-ink-700">
-                    <Image
-                      src={m.img}
-                      alt={m.name}
-                      fill
-                      sizes="(max-width:640px) 100vw, 50vw"
-                      className="object-cover object-center transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
-                    />
-                  </div>
-                  <div className="mt-4">
-                    <p className="text-[18px] font-medium tracking-tight text-white">
+                <div className="group flex flex-col gap-1.5 border-b border-white/[0.1] py-6 transition-colors duration-300 hover:bg-white/[0.02] sm:flex-row sm:items-baseline sm:justify-between sm:gap-8 sm:py-8">
+                  <div className="flex items-baseline gap-4 sm:gap-8">
+                    <span className="font-mono text-[12px] leading-none text-muted transition-colors duration-300 group-hover:text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="display text-[28px] font-semibold leading-[1.02] tracking-tight text-white transition-transform duration-300 ease-out group-hover:translate-x-1.5 sm:text-4xl lg:text-[52px]">
                       {m.name}
-                    </p>
-                    <p className="mt-0.5 text-[13px] text-muted">{m.role}</p>
+                    </h3>
                   </div>
+                  <p className="pl-8 text-[13px] leading-relaxed text-muted sm:pl-0 sm:text-right sm:text-[14px]">
+                    {m.role}
+                  </p>
                 </div>
               </RevealItem>
             ))}
