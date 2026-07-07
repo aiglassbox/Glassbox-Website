@@ -132,13 +132,16 @@ export const projects: Project[] = [
     name: "FOO",
     card: A("proj-foo-cover.jpg"),
     cover: A("proj-foo-cover.jpg"),
-    video: "/videos/foo.mp4",
     metrics: [
       { value: "600", suffix: "%", label: "Increase in organic traffic through targeted paid campaigns." },
       { value: "10", suffix: "%", label: "Month-on-month increase in footfalls." },
     ],
-    gallery: [A("proj-foo-1.jpg")],
-    galleryCaptions: ["The FOO brand world, from ramen to fresh brew."],
+    gallery: [A("proj-foo-2.jpg"), A("proj-foo-1.jpg")],
+    galleryVideos: ["/videos/foo.mp4", undefined],
+    galleryCaptions: [
+      "FOO, in motion. The campaign film.",
+      "The FOO brand world, from ramen to fresh brew.",
+    ],
     tagline:
       "Consolidating five fragmented agency relationships into one accountable, performance-linked partnership with a unified national narrative.",
     intro: "Resetting the PR story for India's leading pan-Asian restaurant.",
